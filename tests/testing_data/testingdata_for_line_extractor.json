@@ -1,0 +1,1111 @@
+{
+    "assert_p": [
+        "due to :ref:`validation <valid-local.tee>`, a value is on the top of the stack",
+        "due to :ref:`validation <valid-vec-extract_lane>`, :math:`x < N`",
+        "due to :ref:`validation <valid-call>`, :math:`F.\\AMODULE.\\MIFUNCS[x]` exists",
+        "due to :ref:`validation <valid-table.fill>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to the earlier check against the memory size, :math:`d+n-1 < 2^{32}`",
+        "due to :ref:`validation <valid-table.get>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-select>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-memory.copy>`, :math:`F.\\AMODULE.\\MIMEMS[0]` exists",
+        "due to :ref:`validation <valid-table.grow>`, :math:`S.\\STABLES[a]` exists",
+        "due to :ref:`validation <valid-vec-replace_lane>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-table.get>`, :math:`S.\\STABLES[a]` exists",
+        "due to :ref:`validation <valid-memory.init>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-vec-extmul>`, two values of :ref:`value type <syntax-valtype>` |V128| are on the top of the stack",
+        "due to :ref:`validation <valid-table.copy>`, :math:`F.\\AMODULE.\\MITABLES[x]` exists",
+        "due to :ref:`validation <valid-vvternop>`, three values of :ref:`value type <syntax-valtype>` |V128| are on the top of the stack",
+        "due to :ref:`validation <valid-load-extend>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-vec-dot>`, two values of :ref:`value type <syntax-valtype>` |V128| are on the top of the stack",
+        "due to the earlier check against the table size, :math:`s+1 < 2^{32}`",
+        "due to :ref:`validation <valid-memory.fill>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`syntax <syntax-instr-vec>`, :math:`N = 2\\cdot M`",
+        "due to :ref:`validation <valid-vec-narrow>`, two values of :ref:`value type <syntax-valtype>` |V128| are on the top of the stack",
+        "due to :ref:`validation <valid-vvbinop>`, two values of :ref:`value type <syntax-valtype>` |V128| are on the top of the stack",
+        "due to :ref:`validation <valid-vec-shuffle>`, for all :math:`x_i` in :math:`x^\\ast` it holds that :math:`x_i < 32`",
+        "due to :ref:`validation <valid-elem.drop>`, :math:`F.\\AMODULE.\\MIELEMS[x]` exists",
+        "due to the earlier check against the memory size, :math:`d+1 < 2^{32}`",
+        "due to :ref:`validation <valid-vvunop>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-global.get>`, :math:`F.\\AMODULE.\\MIGLOBALS[x]` exists",
+        "due to :ref:`validation <valid-table.init>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-br>`, there are at least :math:`n` values on the top of the stack",
+        "due to the earlier check against the segment size, :math:`s+1 < 2^{32}`",
+        "due to :ref:`validation <valid-memory.init>`, :math:`S.\\SMEMS[\\X{ma}]` exists",
+        "the top of the stack is the frame :math:`F`",
+        "due to :ref:`validation <valid-memory.init>`, :math:`F.\\AMODULE.\\MIDATAS[x]` exists",
+        "due to :ref:`validation <valid-memory.grow>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-load-extend>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-table.fill>`, a :ref:`reference value <syntax-ref>` is on the top of the stack",
+        "due to :ref:`validation <valid-block>`, there are at least :math:`m` values on the top of the stack",
+        "due to :ref:`validation <valid-table.init>`, :math:`S.\\SELEMS[\\X{ea}]` exists",
+        "due to :ref:`validation <valid-storen>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-ref.func>`, :math:`F.\\AMODULE.\\MIFUNCS[x]` exists",
+        "due to :ref:`validation <valid-table.set>`, :math:`F.\\AMODULE.\\MITABLES[x]` exists",
+        "due to :ref:`validation of table mutation <valid-table.set>`, :math:`S.\\SFUNCS[a]` exists",
+        "due to :ref:`validation <valid-table.copy>`, :math:`F.\\AMODULE.\\MITABLES[y]` exists",
+        "due to :ref:`validation <valid-relop>`, two values of :ref:`value type <syntax-valtype>` :math:`t` are on the top of the stack",
+        "due to :ref:`validation <valid-vunop>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-br>`, the top of the stack now is a label",
+        "due to :ref:`validation <valid-local.set>`, :math:`F.\\ALOCALS[x]` exists",
+        "due to :ref:`validation <valid-table.size>`, :math:`F.\\AMODULE.\\MITABLES[x]` exists",
+        "due to :ref:`validation <valid-unop>`, a value of :ref:`value type <syntax-valtype>` :math:`t` is on the top of the stack",
+        "due to :ref:`validation <valid-table.fill>`, a :ref:`reference value <syntax-ref>` is on the top of the stack",
+        "due to :ref:`validation <valid-memory.fill>`, :math:`F.\\AMODULE.\\MIMEMS[0]` exists",
+        "due to :ref:`validation <valid-vec-replace_lane>`, a value of :ref:`value type <syntax-valtype>` :math:`t_1` is on the top of the stack",
+        "due to :ref:`validation <valid-storen>`, :math:`F.\\AMODULE.\\MIMEMS[0]` exists",
+        "due to :ref:`validation <valid-memory.copy>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-table.grow>`, :math:`F.\\AMODULE.\\MITABLES[x]` exists",
+        "due to the earlier check against the memory size, :math:`d+1 < 2^{32}`",
+        "due to :ref:`validation <valid-vishiftop>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-table.init>`, :math:`F.\\AMODULE.\\MITABLES[x]` exists",
+        "due to :ref:`validation <valid-vec-extadd_pairwise>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-memory.copy>`, :math:`S.\\SMEMS[\\X{ma}]` exists",
+        "due to :ref:`validation <valid-cvtop>`, a value of :ref:`value type <syntax-valtype>` :math:`t_1` is on the top of the stack",
+        "due to :ref:`validation <valid-binop>`, two values of :ref:`value type <syntax-valtype>` :math:`t` are on the top of the stack",
+        "due to the earlier check against the table size, :math:`s+n-1 < 2^{32}`",
+        "due to :ref:`validation <valid-loadn>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-vvtestop>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-table.grow>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-vrelop>`, two values of :ref:`value type <syntax-valtype>` |V128| are on the top of the stack",
+        "due to the earlier check against the table size, :math:`d+1 < 2^{32}`",
+        "due to :ref:`validation <valid-global.set>`, :math:`F.\\AMODULE.\\MIGLOBALS[x]` exists",
+        "due to :ref:`validation <valid-memory.init>`, :math:`F.\\AMODULE.\\MIMEMS[0]` exists",
+        "due to :ref:`validation <valid-if>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-table.copy>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-memory.copy>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-testop>`, a value of :ref:`value type <syntax-valtype>` :math:`t` is on the top of the stack",
+        "due to :ref:`validation <valid-load-extend>`, :math:`F.\\AMODULE.\\MIMEMS[0]` exists",
+        "due to :ref:`validation <valid-table.fill>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-call_indirect>`, :math:`F.\\AMODULE.\\MITYPES[y]` exists",
+        "due to :ref:`validation <valid-memory.init>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-blocktype>`, :math:`\\expand_F(\\blocktype)` is defined",
+        "due to :ref:`validation <valid-vtestop>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-table.init>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-memory.fill>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-table.copy>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-vec-splat>`, a value of :ref:`value type <syntax-valtype>` :math:`t` is on the top of the stack",
+        "due to the earlier check against the memory size, :math:`s+1 < 2^{32}`",
+        "due to :ref:`validation <valid-vec-shuffle>`, two values of :ref:`value type <syntax-valtype>` |V128| are on the top of the stack",
+        "due to :ref:`validation <valid-table.size>`, :math:`S.\\STABLES[a]` exists",
+        "due to :ref:`validation <valid-vbinop>`, two values of :ref:`value type <syntax-valtype>` |V128| are on the top of the stack",
+        "due to :ref:`validation <valid-vec-replace_lane>`, :math:`x < \\dim(\\shape)`",
+        "due to :ref:`validation <valid-vishiftop>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-storen>`, a value of :ref:`value type <syntax-valtype>` :math:`\\V128` is on the top of the stack",
+        "due to :ref:`validation <valid-global.set>`, :math:`S.\\SGLOBALS[a]` exists",
+        "due to :ref:`validation <valid-if>`, there are at least :math:`m` values on the top of the stack",
+        "due to :ref:`validation <valid-table.init>`, :math:`S.\\STABLES[\\X{ta}]` exists",
+        "due to :ref:`validation <valid-load-extend>`, :math:`S.\\SMEMS[a]` exists",
+        "due to :ref:`validation <valid-memory.size>`, :math:`F.\\AMODULE.\\MIMEMS[0]` exists",
+        "due to :ref:`validation <valid-return>`, the stack contains at least one :ref:`frame <syntax-frame>`",
+        "due to :ref:`validation <valid-memory.fill>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-br>`, the stack contains at least :math:`l+1` labels",
+        "due to the earlier check against the table size, :math:`d+n-1 < 2^{32}`",
+        "due to :ref:`validation <valid-storen>`, :math:`S.\\SMEMS[a]` exists",
+        "due to :ref:`validation <valid-table.set>`, :math:`S.\\STABLES[a]` exists",
+        "due to :ref:`validation <valid-table.fill>`, :math:`F.\\AMODULE.\\MITABLES[x]` exists",
+        "due to :ref:`validation <valid-memory.copy>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-return>`, there are at least :math:`n` values on the top of the stack",
+        "due to :ref:`validation <valid-table.fill>`, :math:`S.\\STABLES[\\X{ta}]` exists",
+        "due to :ref:`validation <valid-table.copy>`, :math:`S.\\STABLES[\\X{ta}_y]` exists",
+        "due to :ref:`validation <valid-loop>`, there are at least :math:`m` values on the top of the stack",
+        "due to :ref:`validation <valid-load-extend>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-table.copy>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to the earlier check against the memory size, :math:`s+1 < 2^{32}`",
+        "due to :ref:`validation <valid-table.copy>`, :math:`S.\\STABLES[\\X{ta}_x]` exists",
+        "due to :ref:`validation <valid-storen>`, a value of :ref:`value type <syntax-valtype>` :math:`t` is on the top of the stack",
+        "due to :ref:`validation <valid-memory.fill>`, :math:`S.\\SMEMS[\\X{ma}]` exists",
+        "due to :ref:`validation <valid-select>`, two more values (of the same :ref:`value type <syntax-valtype>`) are on the top of the stack",
+        "due to :ref:`validation <valid-vec-extract_lane>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-call_indirect>`, :math:`S.\\STABLES[\\X{ta}]` exists",
+        "due to :ref:`validation <valid-ref.is_null>`, a :ref:`reference value <syntax-ref>` is on the top of the stack",
+        "due to :ref:`validation <valid-global.get>`, :math:`S.\\SGLOBALS[a]` exists",
+        "due to :ref:`validation <valid-call_indirect>`, a value with :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-local.set>`, a value is on the top of the stack",
+        "due to :ref:`validation <valid-table.init>`, :math:`F.\\AMODULE.\\MIELEMS[y]` exists",
+        "due to the earlier check against the memory size, :math:`s+n-1 < 2^{32}`",
+        "due to :ref:`validation <valid-local.get>`, :math:`F.\\ALOCALS[x]` exists",
+        "due to :ref:`validation <valid-table.set>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-data.drop>`, :math:`F.\\AMODULE.\\MIDATAS[x]` exists",
+        "due to :ref:`validation <valid-drop>`, a value is on the top of the stack",
+        "due to :ref:`validation <valid-memory.grow>`, :math:`S.\\SMEMS[a]` exists",
+        "due to :ref:`validation <valid-global.set>`, a value is on the top of the stack",
+        "due to :ref:`validation <valid-table.init>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-vec-bitmask>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to :ref:`validation <valid-memory.init>`, :math:`S.\\SDATAS[\\X{da}]` exists",
+        "due to :ref:`validation <valid-loadn>`, :math:`S.\\SMEMS[a]` exists",
+        "due to :ref:`validation <valid-call_indirect>`, :math:`F.\\AMODULE.\\MITABLES[x]` exists",
+        "due to :ref:`validation <valid-vcvtop>`, a value of :ref:`value type <syntax-valtype>` |V128| is on the top of the stack",
+        "due to the earlier check against the memory size, :math:`d+1 < 2^{32}`",
+        "due to :ref:`validation <valid-memory.size>`, :math:`S.\\SMEMS[a]` exists",
+        "due to :ref:`validation <valid-table.set>`, a :ref:`reference value <syntax-ref>` is on the top of the stack",
+        "due to :ref:`validation of table mutation <valid-table.set>`, :math:`r` is a :ref:`function reference <syntax-ref.func>`",
+        "due to :ref:`validation <valid-loadn>`, :math:`F.\\AMODULE.\\MIMEMS[0]` exists",
+        "due to :ref:`validation <valid-data.drop>`, :math:`S.\\SDATAS[a]` exists",
+        "due to :ref:`validation <valid-if>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-elem.drop>`, :math:`S.\\SELEMS[a]` exists",
+        "due to :ref:`validation <valid-table.get>`, :math:`F.\\AMODULE.\\MITABLES[x]` exists",
+        "due to the earlier check against the table size, :math:`d+1 < 2^{32}`",
+        "due to :ref:`validation <valid-br_if>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-memory.init>`, a value of :ref:`value type <syntax-valtype>` |I32| is on the top of the stack",
+        "due to :ref:`validation <valid-memory.grow>`, :math:`F.\\AMODULE.\\MIMEMS[0]` exists"
+    ],
+    "execute_3_p": [
+        ":math:`\\MEMORYINIT~x`",
+        ":math:`\\TABLESET~x`",
+        ":math:`\\I32\\K{.}\\STORE\\K{8}~\\{ \\OFFSET~0, \\ALIGN~0 \\}`",
+        ":math:`\\TABLEINIT~x~y`",
+        ":math:`\\I32\\K{.}\\LOAD\\K{8\\_u}~\\{ \\OFFSET~0, \\ALIGN~0 \\}`",
+        ":math:`\\I32\\K{.}\\LOAD\\K{8\\_u}~\\{ \\OFFSET~0, \\ALIGN~0 \\}`",
+        ":math:`\\TABLESET~x`",
+        ":math:`\\TABLECOPY~x~y`",
+        ":math:`\\MEMORYCOPY`",
+        ":math:`\\I32\\K{.}\\STORE\\K{8}~\\{ \\OFFSET~0, \\ALIGN~0 \\}`",
+        ":math:`\\I32\\K{.}\\STORE\\K{8}~\\{ \\OFFSET~0, \\ALIGN~0 \\}`",
+        ":math:`\\TABLESET~x`",
+        ":math:`\\I32\\K{.}\\STORE\\K{8}~\\{ \\OFFSET~0, \\ALIGN~0 \\}`",
+        ":math:`\\MEMORYFILL`",
+        ":math:`\\TABLESET~x`",
+        ":math:`\\TABLEFILL~x`",
+        ":math:`\\TABLEGET~y`"
+    ],
+    "if_p": [
+        ":math:`n = 0`",
+        ":math:`N` and :math:`\\sx` are part of the instruction",
+        ":math:`c` is non-zero",
+        ":math:`s + n` is larger than the length of :math:`\\X{tab}_y.\\TIELEM` or :math:`d + n` is larger than the length of :math:`\\X{tab}_x.\\TIELEM`",
+        "it succeeds, push the value :math:`\\I32.\\CONST~\\X{sz}` to the stack.",
+        ":math:`i` is not smaller than the length of :math:`\\X{tab}.\\TIELEM`",
+        ":math:`N` is part of the instruction",
+        ":math:`i` is smaller than the length of :math:`l^\\ast`",
+        ":math:`\\X{ea} + N/8` is larger than the length of :math:`\\X{mem}.\\MIDATA`",
+        ":math:`s + n` is larger than the length of :math:`\\X{data}.\\DIDATA` or :math:`d + n` is larger than the length of :math:`\\X{mem}.\\MIDATA`",
+        ":math:`\\X{ea} + N/8` is larger than the length of :math:`\\X{mem}.\\MIDATA`",
+        ":math:`s + n` is larger than the length of :math:`\\X{elem}.\\EIELEM` or :math:`d + n` is larger than the length of :math:`\\X{tab}.\\TIELEM`",
+        ":math:`\\half` is :math:`\\K{low}`",
+        ":math:`\\X{ft}_{\\F{actual}}` and :math:`\\X{ft}_{\\F{expect}}` differ",
+        ":math:`d \\leq s`",
+        ":math:`s + n` is larger than the length of :math:`\\X{mem}.\\MIDATA` or :math:`d + n` is larger than the length of :math:`\\X{mem}.\\MIDATA`",
+        ":math:`c` is not :math:`0`",
+        ":math:`N` is not part of the instruction",
+        ":math:`\\X{ea} + N/8` is larger than the length of :math:`\\X{mem}.\\MIDATA`",
+        ":math:`\\binop_t(c_1, c_2)` is defined",
+        ":math:`n = 0`",
+        ":math:`d \\leq s`",
+        ":math:`\\val` is :math:`\\REFNULL~t`",
+        ":math:`\\X{ea} + M \\cdot N /8` is larger than the length of :math:`\\X{mem}.\\MIDATA`",
+        ":math:`d + n` is larger than the length of :math:`\\X{mem}.\\MIDATA`",
+        ":math:`N` is not part of the instruction",
+        ":math:`\\X{ea} + N/8` is larger than the length of :math:`\\X{mem}.\\MIDATA`",
+        ":math:`n` is :math:`0`",
+        ":math:`\\cvtop^{\\sx^?}_{t_1,t_2}(c_1)` is defined",
+        ":math:`c` is non-zero",
+        ":math:`r` is :math:`\\REFNULL~t`",
+        ":math:`i` is not smaller than the length of :math:`\\X{tab}.\\TIELEM`",
+        ":math:`\\unop_t(c_1)` is defined",
+        ":math:`\\half` is :math:`\\K{low}`",
+        ":math:`\\vbinop_{\\shape}(c_1, c_2)` is defined",
+        ":math:`i + n` is larger than the length of :math:`\\X{tab}.\\TIELEM`"
+    ],
+    "push_p": [
+        ":math:`\\val^n`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\I32.\\CONST~s`",
+        "the value :math:`\\I32.\\CONST~b`",
+        "the value :math:`t_2.\\CONST~c_2`",
+        "the value :math:`\\val`",
+        "the value :math:`\\I32.\\CONST~(i+1)`",
+        "the value :math:`\\I32.\\CONST~\\X{sz}`",
+        "the value :math:`\\I32.\\CONST~(n-1)`",
+        "the value :math:`\\I32.\\CONST~c`",
+        "the value :math:`\\val`",
+        "the value :math:`\\V128.\\CONST~c`",
+        "the value :math:`\\val`",
+        "the value :math:`\\I32.\\CONST~(-1)`",
+        "the value :math:`\\I32.\\CONST~\\X{err}`",
+        "the value :math:`\\I32.\\CONST~(n-1)`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\I32.\\CONST~(d+1)`",
+        "the value :math:`\\V128.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~(-1)`",
+        "the value :math:`\\val`",
+        "the value :math:`\\I32.\\CONST~(n-1)`",
+        "the value :math:`t.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~0`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\I32.\\CONST~s`",
+        "the value :math:`\\val_1`",
+        "the value :math:`\\I32.\\CONST~(s+1)`",
+        "the value :math:`\\I32.\\CONST~d`",
+        "the value :math:`\\V128.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~(d+1)`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\val`",
+        "the value :math:`\\V128.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~i`",
+        "the value :math:`t.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~\\X{err}`",
+        "the value :math:`\\I32.\\CONST~d`",
+        "the value :math:`\\val`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\I32.\\CONST~d`",
+        "the value :math:`\\REFFUNCADDR~a`",
+        "the value :math:`\\I32.\\CONST~(d+1)`",
+        "the value :math:`\\I32.\\CONST~\\X{sz}`",
+        "the value :math:`\\I32.\\CONST~1`",
+        "the value :math:`\\I32.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~(d+n-1)`",
+        "the value :math:`t_2.\\CONST~c_2`",
+        "the value :math:`\\I32.\\CONST~(s+1)`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\I32.\\CONST~i`",
+        "the values :math:`\\val^n`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\I32.\\CONST~(s+n-1)`",
+        "the value :math:`\\I32.\\CONST~d`",
+        "the value :math:`t.\\CONST~c`",
+        "the value :math:`\\REFNULL~t`",
+        "the value :math:`\\I32.\\CONST~i`",
+        "the value :math:`\\val`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\val`",
+        "the value :math:`\\I32.\\CONST~c`",
+        "the value :math:`\\val`",
+        ":math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\I32.\\CONST~(n-1)`",
+        "the value :math:`\\V128.\\VCONST~c`",
+        "the value :math:`\\val_2`",
+        "the value :math:`\\V128.\\VCONST~c'`"
+    ],
+    "let_2_p": [
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{t\\K{x}N}(\\vishiftop_{t}(i^\\ast, s^N))`"
+        ],
+        [
+            ":math:`\\X{sz}`",
+            "the length of :math:`\\X{tab}.\\TIELEM`"
+        ],
+        [
+            ":math:`N`",
+            "the :ref:`bit width <syntax-numtype>` :math:`|t|` of :ref:`number type <syntax-numtype>` :math:`t`"
+        ],
+        [
+            ":math:`m_k`",
+            "the integer for which :math:`\\bytes_{\\iM}(m_k) = b^\\ast[k \\cdot M/8 \\slice M/8]`"
+        ],
+        [
+            ":math:`c_2`",
+            "a possible result of computing :math:`\\cvtop^{\\sx^?}_{t_1,t_2}(c_1)`"
+        ],
+        [
+            ":math:`\\X{ta}`",
+            "the :ref:`table address <syntax-tableaddr>` :math:`F.\\AMODULE.\\MITABLES[x]`"
+        ],
+        [
+            ":math:`\\X{ta}_x`",
+            "the :ref:`table address <syntax-tableaddr>` :math:`F.\\AMODULE.\\MITABLES[x]`"
+        ],
+        [
+            ":math:`L`",
+            ":math:`128 / N`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{\\X{i}W\\K{x}N}(n_0 \\dots n_{N-1})`"
+        ],
+        [
+            ":math:`i^\\ast`",
+            "the sequence :math:`\\lanes_{t\\K{x}N}(c_1)`"
+        ],
+        [
+            ":math:`\\X{ma}`",
+            "the :ref:`memory address <syntax-memaddr>` :math:`F.\\AMODULE.\\MIMEMS[0]`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\extend^{\\sx}_{N,|t|}(n)`"
+        ],
+        [
+            ":math:`\\val`",
+            "the value :math:`F.\\ALOCALS[x]`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{t\\K{x}N}(\\extends_{1,|t|}(\\vrelop_t(i^\\ast, j^\\ast)))`"
+        ],
+        [
+            ":math:`a`",
+            "the :ref:`memory address <syntax-memaddr>` :math:`F.\\AMODULE.\\MIMEMS[0]`"
+        ],
+        [
+            ":math:`W`",
+            "the integer :math:`M \\cdot 2`"
+        ],
+        [
+            ":math:`\\X{ft}_{\\F{expect}}`",
+            "the :ref:`function type <syntax-functype>` :math:`F.\\AMODULE.\\MITYPES[y]`"
+        ],
+        [
+            ":math:`b^\\ast`",
+            "the byte sequence :math:`\\X{mem}.\\MIDATA[\\X{ea} \\slice N/8]`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\relop_t(c_1, c_2)`"
+        ],
+        [
+            ":math:`b^\\ast`",
+            "the byte sequence :math:`\\bytes_{\\iN}(\\lanes_{\\K{i}N\\K{x}L}(c)[x])`"
+        ],
+        [
+            ":math:`\\X{mem}`",
+            "the :ref:`memory instance <syntax-meminst>` :math:`S.\\SMEMS[\\X{ma}]`"
+        ],
+        [
+            ":math:`c_2`",
+            "the result of computing :math:`\\extend^{sx^?}_{t_1,t_2}(i^\\ast[x])`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            "the result of computing :math:`\\vcvtop^{\\sx^?}_{|t_1|,|t_2|}(i^\\ast)`"
+        ],
+        [
+            ":math:`i^\\ast`",
+            "the sequence :math:`\\lanes_{t\\K{x}N}(c_1)`"
+        ],
+        [
+            ":math:`i^\\ast`",
+            "the concatenation of the two sequences :math:`i_1^\\ast~i_2^\\ast`"
+        ],
+        [
+            ":math:`B`",
+            "the :ref:`bit width <syntax-valtype>` :math:`|t|` of :ref:`value type <syntax-valtype>` :math:`t`"
+        ],
+        [
+            ":math:`c`",
+            "a possible result of computing :math:`\\unop_t(c_1)`"
+        ],
+        [
+            ":math:`i_2^\\ast`",
+            "the sequence :math:`\\lanes_{i8x16}(c_2)`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\vvternop_{\\I128}(c_1, c_2, c_3)`"
+        ],
+        [
+            ":math:`\\val`",
+            "the value :math:`\\X{tab}.\\TIELEM[i]`"
+        ],
+        [
+            ":math:`n`",
+            "the result of computing :math:`\\wrap_{|t|,N}(c)`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\vvunop_{\\I128}(c_1)`"
+        ],
+        [
+            ":math:`b`",
+            "the byte :math:`\\X{data}.\\DIDATA[s]`"
+        ],
+        [
+            ":math:`(i_1~i_2)^\\ast`",
+            "the result of computing :math:`\\imul_{32}(\\extends_{16,32}(\\lanes_{\\I16X8}(c_1)), \\extends_{16,32}(\\lanes_{\\I16X8}(c_2)))`"
+        ],
+        [
+            ":math:`L`",
+            "the :math:`l`-th label appearing on the stack, starting from the top and counting from zero"
+        ],
+        [
+            ":math:`c`",
+            "a possible result of computing :math:`\\vbinop_{\\shape}(c_1, c_2)`"
+        ],
+        [
+            ":math:`\\X{da}`",
+            "the :ref:`data address <syntax-dataaddr>` :math:`F.\\AMODULE.\\MIDATAS[x]`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            "the result of computing :math:`\\vcvtop^{\\sx}_{|t_1|,|t_2|}(i^\\ast)` concatenated with the vector :math:`0^M`"
+        ],
+        [
+            ":math:`[t_1^m] \\to [t_2^n]`",
+            "the :ref:`function type <syntax-functype>` :math:`\\expand_F(\\blocktype)`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\testop_t(c_1)`"
+        ],
+        [
+            ":math:`i^\\ast`",
+            "the sequence :math:`\\lanes_{i8x16}(c_2)`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            "the result of computing :math:`\\iadd_{32}(i_1, i_2)^\\ast`"
+        ],
+        [
+            "`c`",
+            "the result of computing :math:`\\lanes^{-1}_{t_2\\K{x}N}(j^\\ast)`"
+        ],
+        [
+            ":math:`t`",
+            "the type :math:`\\unpacked(\\shape)`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{\\iN\\K{x}L}(n^L)`"
+        ],
+        [
+            ":math:`i^\\ast`",
+            "the sequence :math:`\\lanes_{t_1\\K{x}N}(c_1)`"
+        ],
+        [
+            ":math:`\\X{tab}_x`",
+            "the :ref:`table instance <syntax-tableinst>` :math:`S.\\STABLES[\\X{ta}_x]`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            "the result of computing :math:`\\iadd_{N}(i_1, i_2)^\\ast`"
+        ],
+        [
+            ":math:`d_1^M`",
+            "the result of computing :math:`\\narrow^{\\sx}_{|t_1|,|t_2|}(\\lanes_{t_1\\K{x}M}(c_1))`"
+        ],
+        [
+            ":math:`N`",
+            "the :ref:`bit width <syntax-numtype>` :math:`|t|` of :ref:`number type <syntax-numtype>` :math:`t`"
+        ],
+        [
+            ":math:`c`",
+            "the result of :math:`\\lanes^{-1}_{\\shape}(c_1^N)`"
+        ],
+        [
+            ":math:`\\X{ea}`",
+            "the integer :math:`i + \\memarg.\\OFFSET`"
+        ],
+        [
+            ":math:`\\X{glob}`",
+            "the :ref:`global instance <syntax-globalinst>` :math:`S.\\SGLOBALS[a]`"
+        ],
+        [
+            ":math:`c`",
+            "a possible result of computing :math:`\\binop_t(c_1, c_2)`"
+        ],
+        [
+            ":math:`b^\\ast`",
+            "the byte sequence :math:`\\X{mem}.\\MIDATA[\\X{ea} \\slice N/8]`"
+        ],
+        [
+            ":math:`c`",
+            "the result of :math:`\\lanes^{-1}_{i8x16}(i^\\ast[x^\\ast[0]] \\dots i^\\ast[x^\\ast[15]])`"
+        ],
+        [
+            ":math:`\\X{f}`",
+            "the :ref:`function instance <syntax-funcinst>` :math:`S.\\SFUNCS[a]`"
+        ],
+        [
+            ":math:`b^\\ast`",
+            "the byte sequence :math:`\\bytes_t(c)`"
+        ],
+        [
+            ":math:`\\X{sz}`",
+            "the length of :math:`S.\\STABLES[a]`"
+        ],
+        [
+            ":math:`L`",
+            "the label whose arity is :math:`n` and whose continuation is the end of the |IF| instruction"
+        ],
+        [
+            ":math:`r`",
+            "the :ref:`reference <syntax-ref>` :math:`\\X{tab}.\\TIELEM[i]`"
+        ],
+        [
+            ":math:`L`",
+            "the label whose arity is :math:`n` and whose continuation is the end of the block"
+        ],
+        [
+            ":math:`b^\\ast`",
+            "the byte sequence :math:`\\X{mem}.\\MIDATA[\\X{ea} \\slice M \\cdot N /8]`"
+        ],
+        [
+            ":math:`\\X{ft}_{\\F{actual}}`",
+            "the :ref:`function type <syntax-functype>` :math:`\\X{f}.\\FITYPE`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{t_2\\K{x}N}(j^\\ast)`"
+        ],
+        [
+            ":math:`a`",
+            "the :ref:`global address <syntax-globaladdr>` :math:`F.\\AMODULE.\\MIGLOBALS[x]`"
+        ],
+        [
+            ":math:`i^\\ast`",
+            "the sequence :math:`\\lanes_{t_1\\K{x}M}(c_1)`"
+        ],
+        [
+            ":math:`t_1`",
+            "the type :math:`\\unpacked(\\shape)`"
+        ],
+        [
+            ":math:`\\X{ea}`",
+            "the integer :math:`i + \\memarg.\\OFFSET`"
+        ],
+        [
+            ":math:`(i_1~i_2)^\\ast`",
+            "the sequence :math:`\\extend^{\\sx}_{|t_1|,|t_2|}(\\lanes_{t_1\\K{x}M}(c_1))`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{\\I32X4}(j^\\ast)`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{\\shape}(i^\\ast \\with [x] = c_1)`"
+        ],
+        [
+            ":math:`i_2^N`",
+            "the sequence as a result of computing :math:`\\ilts_{B}(i_1^N, 0^N)`"
+        ],
+        [
+            ":math:`b^\\ast`",
+            "the byte sequence :math:`\\X{mem}.\\MIDATA[\\X{ea} \\slice N/8]`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\vvbinop_{\\I128}(c_1, c_2)`"
+        ],
+        [
+            ":math:`n_k`",
+            "the result of :math:`\\extend^{\\sx}_{M,W}(m_k)`"
+        ],
+        [
+            ":math:`\\X{tab}_y`",
+            "the :ref:`table instance <syntax-tableinst>` :math:`S.\\STABLES[\\X{ta}_y]`"
+        ],
+        [
+            ":math:`\\X{tab}`",
+            "the :ref:`table instance <syntax-tableinst>` :math:`S.\\STABLES[a]`"
+        ],
+        [
+            ":math:`i_1^\\ast`",
+            "the sequence :math:`\\lanes_{i8x16}(c_1)`"
+        ],
+        [
+            ":math:`L`",
+            ":math:`128/N`"
+        ],
+        [
+            ":math:`n`",
+            "the arity of :math:`L`"
+        ],
+        [
+            ":math:`r`",
+            "the constant for which :math:`\\bytes_{\\iN}(r) = b^\\ast`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            "the sequence :math:`\\lanes_{i8x16}(c_1)`"
+        ],
+        [
+            ":math:`b^\\ast`",
+            "the byte sequence :math:`\\bytes_{\\iN}(n)`"
+        ],
+        [
+            ":math:`\\X{tab}`",
+            "the :ref:`table instance <syntax-tableinst>` :math:`S.\\STABLES[\\X{ta}]`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{t_2\\K{x}N}(j^\\ast)`"
+        ],
+        [
+            ":math:`\\X{ta}_y`",
+            "the :ref:`table address <syntax-tableaddr>` :math:`F.\\AMODULE.\\MITABLES[y]`"
+        ],
+        [
+            ":math:`n`",
+            "the arity of :math:`F`"
+        ],
+        [
+            ":math:`\\REFFUNCADDR~a`",
+            "the :ref:`function reference <syntax-ref.func>` :math:`r`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            "the sequence :math:`\\lanes_{t\\K{x}N}(c_2)`"
+        ],
+        [
+            ":math:`\\X{ea}`",
+            "the :ref:`element address <syntax-elemaddr>` :math:`F.\\AMODULE.\\MIELEMS[y]`"
+        ],
+        [
+            ":math:`a`",
+            "the :ref:`table address <syntax-tableaddr>` :math:`F.\\AMODULE.\\MITABLES[x]`"
+        ],
+        [
+            ":math:`c`",
+            "the constant for which :math:`\\bytes_t(c) = b^\\ast`"
+        ],
+        [
+            ":math:`c`",
+            "the result of :math:`\\extendu_{N,128}(n)`"
+        ],
+        [
+            ":math:`t_2`",
+            "the type :math:`\\unpacked(t_1\\K{x}N)`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            "the sequence :math:`\\lanes_{t_1\\K{x}M}(c_2)[0 \\slice N]`"
+        ],
+        [
+            ":math:`n`",
+            "the integer for which :math:`\\bytes_{\\iN}(n) = b^\\ast`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            "the sequence :math:`\\lanes_{t_1\\K{x}M}(c_2)[N \\slice N]`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{t_2\\K{x}N}(\\vcvtop^{\\sx}_{|t_1|,|t_2|}(i^\\ast))`"
+        ],
+        [
+            ":math:`\\X{data}`",
+            "the  :ref:`data instance <syntax-datainst>` :math:`S.\\SDATAS[\\X{da}]`"
+        ],
+        [
+            ":math:`\\X{elem}`",
+            "the :ref:`element instance <syntax-eleminst>` :math:`S.\\SELEMS[\\X{ea}]`"
+        ],
+        [
+            ":math:`L`",
+            "the integer :math:`128 / N`"
+        ],
+        [
+            ":math:`i_1^N`",
+            "the sequence :math:`\\lanes_{t\\K{x}N}(c)`"
+        ],
+        [
+            ":math:`c`",
+            "the integer :math:`\\ibits_{32}^{-1}(i_2^N~0^{32-N})`"
+        ],
+        [
+            ":math:`i^\\ast`",
+            "the sequence :math:`\\lanes_{t_1\\K{x}M}(c_1)[N \\slice N]`"
+        ],
+        [
+            ":math:`c`",
+            "the result of :math:`\\lanes^{-1}_{t_2\\K{x}N}(d_1^M~d_2^M)`"
+        ],
+        [
+            ":math:`c^\\ast`",
+            "the concatenation of the two sequences :math:`j^\\ast~0^{240}`"
+        ],
+        [
+            ":math:`i^\\ast`",
+            "the sequence :math:`\\lanes_{t_1\\K{x}M}(c_1)[0 \\slice N]`"
+        ],
+        [
+            ":math:`n`",
+            "the integer for which :math:`\\bytes_{\\iN}(n) = b^\\ast`"
+        ],
+        [
+            ":math:`N`",
+            "the integer :math:`\\dim(\\shape)`"
+        ],
+        [
+            ":math:`i^\\ast`",
+            "the sequence :math:`\\lanes_{\\shape}(c_2)`"
+        ],
+        [
+            ":math:`a`",
+            "the :ref:`data address <syntax-dataaddr>` :math:`F.\\AMODULE.\\MIDATAS[x]`"
+        ],
+        [
+            ":math:`i`",
+            "the result of computing :math:`\\ine_{128}(c_1, 0)`"
+        ],
+        [
+            ":math:`a`",
+            "the :ref:`element address <syntax-elemaddr>` :math:`F.\\AMODULE.\\MIELEMS[x]`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\vunop_{\\shape}(c_1)`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{\\K{i}N\\K{x}L}(\\lanes_{\\K{i}N\\K{x}L}(v) \\with [x] = r)`"
+        ],
+        [
+            ":math:`\\val`",
+            "the :ref:`reference value <syntax-ref>` :math:`\\X{elem}.\\EIELEM[s]`"
+        ],
+        [
+            ":math:`i_1^\\ast`",
+            "the sequence :math:`\\lanes_{\\shape}(c_1)`"
+        ],
+        [
+            ":math:`d_2^M`",
+            "the result of computing :math:`\\narrow^{\\sx}_{|t_1|,|t_2|}(\\lanes_{t_1\\K{x}M}(c_2))`"
+        ],
+        [
+            ":math:`\\X{mem}`",
+            "the :ref:`memory instance <syntax-meminst>` :math:`S.\\SMEMS[a]`"
+        ],
+        [
+            ":math:`L`",
+            "the label whose arity is :math:`m` and whose continuation is the start of the loop"
+        ],
+        [
+            ":math:`i`",
+            "the result of computing :math:`\\bool(\\bigwedge(i_1 \\neq 0)^\\ast)`"
+        ],
+        [
+            ":math:`\\val`",
+            "the value :math:`\\X{glob}.\\GIVALUE`"
+        ],
+        [
+            ":math:`a`",
+            "the :ref:`function address <syntax-funcaddr>` :math:`F.\\AMODULE.\\MIFUNCS[x]`"
+        ],
+        [
+            ":math:`\\X{err}`",
+            "the |i32| value :math:`2^{32}-1`, for which :math:`\\signed_{32}(\\X{err})` is :math:`-1`"
+        ],
+        [
+            ":math:`c`",
+            "the result of computing :math:`\\lanes^{-1}_{t_2\\K{x}N}(\\imul_{t_2\\K{x}N}(\\extend^{\\sx}_{|t_1|,|t_2|}(i^\\ast), \\extend^{\\sx}_{|t_1|,|t_2|}(j^\\ast)))`"
+        ],
+        [
+            ":math:`\\X{sz}`",
+            "the length of :math:`S.\\SMEMS[a]` divided by the :ref:`page size <page-size>`"
+        ],
+        [
+            ":math:`l_i`",
+            "the label :math:`l^\\ast[i]`"
+        ],
+        [
+            ":math:`c'`",
+            "the result of :math:`\\lanes^{-1}_{i8x16}(c^\\ast[ i^\\ast[0] ] \\dots c^\\ast[ i^\\ast[15] ])`"
+        ],
+        [
+            ":math:`F`",
+            "the :ref:`current <exec-notation-textual>` :ref:`frame <syntax-frame>`"
+        ],
+        [
+            ":math:`\\X{sz}`",
+            "the length of :math:`\\X{mem}.\\MIDATA` divided by the :ref:`page size <page-size>`"
+        ]
+    ],
+    "replace_p": [
+        [
+            ":math:`S.\\SELEMS[a]`",
+            "the :ref:`element instance <syntax-eleminst>` :math:`\\{\\EIELEM~\\epsilon\\}`"
+        ],
+        [
+            "the bytes :math:`\\X{mem}.\\MIDATA[\\X{ea} \\slice N/8]`",
+            ":math:`b^\\ast`"
+        ],
+        [
+            ":math:`\\X{glob}.\\GIVALUE`",
+            "the value :math:`\\val`"
+        ],
+        [
+            ":math:`S.\\SDATAS[a]`",
+            "the :ref:`data instance <syntax-datainst>` :math:`\\{\\DIDATA~\\epsilon\\}`"
+        ],
+        [
+            ":math:`F.\\ALOCALS[x]`",
+            "the value :math:`\\val`"
+        ],
+        [
+            "the element :math:`\\X{tab}.\\TIELEM[i]`",
+            ":math:`\\val`"
+        ],
+        [
+            "the bytes :math:`\\X{mem}.\\MIDATA[\\X{ea} \\slice N/8]`",
+            ":math:`b^\\ast`"
+        ]
+    ],
+    "let_1_p": [
+        [
+            ":math:`c_2`",
+            ":math:`\\cvtop^{\\sx^?}_{t_1,t_2}(c_1)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{\\X{i}W\\K{x}N}(n_0 \\dots n_{N-1})`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\extend^{\\sx}_{N,|t|}(n)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{t\\K{x}N}(\\extends_{1,|t|}(\\vrelop_t(i^\\ast, j^\\ast)))`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\relop_t(c_1, c_2)`"
+        ],
+        [
+            ":math:`c_2`",
+            ":math:`\\extend^{sx^?}_{t_1,t_2}(i^\\ast[x])`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            ":math:`\\vcvtop^{\\sx^?}_{|t_1|,|t_2|}(i^\\ast)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\unop_t(c_1)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\vvternop_{\\I128}(c_1, c_2, c_3)`"
+        ],
+        [
+            ":math:`n`",
+            ":math:`\\wrap_{|t|,N}(c)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\vvunop_{\\I128}(c_1)`"
+        ],
+        [
+            ":math:`(i_1~i_2)^\\ast`",
+            ":math:`\\imul_{32}(\\extends_{16,32}(\\lanes_{\\I16X8}(c_1)), \\extends_{16,32}(\\lanes_{\\I16X8}(c_2)))`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\vbinop_{\\shape}(c_1, c_2)`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            ":math:`0^M`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\testop_t(c_1)`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            ":math:`\\iadd_{32}(i_1, i_2)^\\ast`"
+        ],
+        [
+            "`c`",
+            ":math:`\\lanes^{-1}_{t_2\\K{x}N}(j^\\ast)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{\\iN\\K{x}L}(n^L)`"
+        ],
+        [
+            ":math:`j^\\ast`",
+            ":math:`\\iadd_{N}(i_1, i_2)^\\ast`"
+        ],
+        [
+            ":math:`d_1^M`",
+            ":math:`\\narrow^{\\sx}_{|t_1|,|t_2|}(\\lanes_{t_1\\K{x}M}(c_1))`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{\\shape}(c_1^N)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\binop_t(c_1, c_2)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{i8x16}(i^\\ast[x^\\ast[0]] \\dots i^\\ast[x^\\ast[15]])`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{t_2\\K{x}N}(j^\\ast)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{\\I32X4}(j^\\ast)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{\\shape}(i^\\ast \\with [x] = c_1)`"
+        ],
+        [
+            ":math:`i_2^N`",
+            ":math:`\\ilts_{B}(i_1^N, 0^N)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\vvbinop_{\\I128}(c_1, c_2)`"
+        ],
+        [
+            ":math:`n_k`",
+            ":math:`\\extend^{\\sx}_{M,W}(m_k)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{t_2\\K{x}N}(j^\\ast)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\extendu_{N,128}(n)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{t_2\\K{x}N}(\\vcvtop^{\\sx}_{|t_1|,|t_2|}(i^\\ast))`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{t_2\\K{x}N}(d_1^M~d_2^M)`"
+        ],
+        [
+            ":math:`i`",
+            ":math:`\\ine_{128}(c_1, 0)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\vunop_{\\shape}(c_1)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{\\K{i}N\\K{x}L}(\\lanes_{\\K{i}N\\K{x}L}(v) \\with [x] = r)`"
+        ],
+        [
+            ":math:`d_2^M`",
+            ":math:`\\narrow^{\\sx}_{|t_1|,|t_2|}(\\lanes_{t_1\\K{x}M}(c_2))`"
+        ],
+        [
+            ":math:`i`",
+            ":math:`\\bool(\\bigwedge(i_1 \\neq 0)^\\ast)`"
+        ],
+        [
+            ":math:`c`",
+            ":math:`\\lanes^{-1}_{t_2\\K{x}N}(\\imul_{t_2\\K{x}N}(\\extend^{\\sx}_{|t_1|,|t_2|}(i^\\ast), \\extend^{\\sx}_{|t_1|,|t_2|}(j^\\ast)))`"
+        ],
+        [
+            ":math:`c'`",
+            ":math:`\\lanes^{-1}_{i8x16}(c^\\ast[ i^\\ast[0] ] \\dots c^\\ast[ i^\\ast[15] ])`"
+        ]
+    ],
+    "if_2_p": [
+        [
+            "it succeeds",
+            "push the value :math:`\\I32.\\CONST~\\X{sz}` to the stack"
+        ]
+    ],
+    "else_1_p": [
+        "Else:",
+        "Else:",
+        "Else:",
+        "Else:",
+        "Else:",
+        "Else:",
+        "Else:",
+        "Else:"
+    ],
+    "pop_p": [
+        "the value :math:`t_1.\\CONST~c_1`",
+        "the values :math:`\\val^m`",
+        "the value :math:`\\val`",
+        "the value :math:`t.\\CONST~c_2`",
+        "the value :math:`\\V128.\\VCONST~c_3`",
+        "the value :math:`\\val_2`",
+        "the value :math:`\\I32.\\CONST~s`",
+        "the top element",
+        "the value :math:`t.\\CONST~c_1`",
+        "the value :math:`t.\\CONST~c_1`",
+        "the label",
+        "the value :math:`\\I32.\\CONST~i`",
+        "the value :math:`\\V128.\\VCONST~c_1`",
+        "the value :math:`\\V128.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~n`",
+        "the value :math:`\\V128.\\CONST~v`",
+        "the value",
+        "the value :math:`\\V128.\\VCONST~c_1`",
+        "the value :math:`\\V128.\\VCONST~c_2`",
+        "the value :math:`\\val_1`",
+        "the value :math:`\\I32.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~d`",
+        "the value :math:`t.\\CONST~c`",
+        "the value :math:`\\I32.\\CONST~d`",
+        "the value :math:`\\val`",
+        "the frame",
+        "the value :math:`\\I32.\\CONST~i`",
+        "the value :math:`\\I32.\\CONST~i`",
+        "the value :math:`\\I32.\\CONST~n`",
+        "the value :math:`\\val`",
+        "the value :math:`\\V128.\\VCONST~c_1`",
+        "the value :math:`\\I32.\\CONST~s`",
+        "the values :math:`\\val^n`",
+        "the value :math:`\\val`",
+        "the value :math:`\\I32.\\CONST~s`",
+        "the value :math:`\\V128.\\VCONST~c_2`",
+        "the results :math:`\\val^n`",
+        "the value :math:`\\V128.\\VCONST~c_1`",
+        "the values :math:`\\val^m`",
+        "the value :math:`\\V128.\\VCONST~c_2`",
+        "the value :math:`t_1.\\CONST~c_1`",
+        "the value :math:`\\val`",
+        "the value :math:`\\I32.\\CONST~n`",
+        "the value :math:`\\I32.\\CONST~i`"
+    ],
+    "enter": [
+        "the block :math:`\\val^m~\\instr_2^\\ast` with label :math:`L`",
+        "the block :math:`\\val^m~\\instr_1^\\ast` with label :math:`L`",
+        "the block :math:`\\val^m~\\instr^\\ast` with label :math:`L`"
+    ],
+    "jump_1_p": [
+        "the continuation of :math:`L`",
+        "the instruction after the original call that pushed the frame"
+    ],
+    "return_p": [
+        "Return",
+        "Return"
+    ],
+    "trap_p": [
+        "Trap",
+        "Trap",
+        "Trap"
+    ],
+    "else_2_p": [
+        "push the value :math:`\\I32.\\CONST~(-1)` to the stack.",
+        "push the value :math:`\\I32.\\CONST~\\X{err}` to the stack."
+    ],
+    "execute_1_p": [
+        ":math:`(\\BR~l_N)`",
+        ":math:`(\\BR~l_i)`",
+        ":math:`(\\BR~l)`"
+    ],
+    "repeat_p": [
+        ":math:`l+1`"
+    ],
+    "do_nothing_p": [
+        "Do nothing",
+        "Do nothing"
+    ],
+    "execute_2_p": [
+        ":math:`(\\LOCALSET~x)`"
+    ],
+    "while_p": [
+        "the top of the stack is not a frame",
+        "the top of the stack is a value"
+    ],
+    "invoke_p": [
+        "the function instance at address :math:`a`",
+        "the function instance at address :math:`a`"
+    ],
+    "either_p": [
+        ":ref:`growing <grow-mem>` :math:`\\X{mem}` by :math:`n` :ref:`pages <page-size>`",
+        ":ref:`growing <grow-table>` :math:`\\X{table}` by :math:`n` entries with initialization value :math:`\\val`"
+    ]
+}

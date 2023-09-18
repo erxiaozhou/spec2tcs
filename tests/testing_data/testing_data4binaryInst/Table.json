@@ -1,0 +1,18 @@
+[
+    [
+        "\\hex{25}~~x{:}\\Btableidx ",
+        "\\TABLEGET~x"
+    ],
+    [
+        "\\hex{FC}~~12{:}\\Bu32~~y{:}\\Belemidx~~x{:}\\Btableidx ",
+        "\\TABLEINIT~x~y"
+    ],
+    [
+        "\\hex{FC}~~14{:}\\Bu32~~x{:}\\Btableidx~~y{:}\\Btableidx ",
+        "\\TABLECOPY~x~y"
+    ],
+    [
+        "\\hex{FC}~~15{:}\\Bu32~~x{:}\\Btableidx ",
+        "\\TABLEGROW~x"
+    ]
+]

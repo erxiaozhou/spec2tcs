@@ -1,0 +1,7 @@
+5. Replace :math:`F.\ALOCALS[x]` with the value :math:`\val`.
+8. Replace :math:`\X{glob}.\GIVALUE` with the value :math:`\val`.
+11. Replace the element :math:`\X{tab}.\TIELEM[i]` with :math:`\val`.
+5. Replace :math:`S.\SELEMS[a]` with the :ref:`element instance <syntax-eleminst>` :math:`\{\EIELEM~\epsilon\}`.
+15. Replace the bytes :math:`\X{mem}.\MIDATA[\X{ea} \slice N/8]` with :math:`b^\ast`.
+14. Replace the bytes :math:`\X{mem}.\MIDATA[\X{ea} \slice N/8]` with :math:`b^\ast`.
+5. Replace :math:`S.\SDATAS[a]` with the :ref:`data instance <syntax-datainst>` :math:`\{\DIDATA~\epsilon\}`.

@@ -1,0 +1,2 @@
+8. Jump to the continuation of :math:`L`.
+10. Jump to the instruction after the original call that pushed the frame.

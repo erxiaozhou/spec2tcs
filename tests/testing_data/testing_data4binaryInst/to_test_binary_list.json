@@ -1,0 +1,118 @@
+[
+    [
+        "\\hex{00} ",
+        "\\UNREACHABLE"
+    ],
+    [
+        "\\hex{02}~~\\X{bt}{:}\\Bblocktype~~(\\X{in}{:}\\Binstr)^\\ast~~\\hex{0B}\n       ",
+        "\\BLOCK~\\X{bt}~\\X{in}^\\ast~\\END"
+    ],
+    [
+        "\\hex{04}~~\\X{bt}{:}\\Bblocktype~~(\\X{in}{:}\\Binstr)^\\ast~~\\hex{0B}\n       ",
+        "\\IF~\\X{bt}~\\X{in}^\\ast~\\ELSE~\\epsilon~\\END"
+    ],
+    [
+        "\\hex{04}~~\\X{bt}{:}\\Bblocktype~~(\\X{in}_1{:}\\Binstr)^\\ast~~\n       \\hex{05}~~(\\X{in}_2{:}\\Binstr)^\\ast~~\\hex{0B}\n       ",
+        "\\IF~\\X{bt}~\\X{in}_1^\\ast~\\ELSE~\\X{in}_2^\\ast~\\END"
+    ],
+    [
+        "\\hex{0C}~~l{:}\\Blabelidx ",
+        "\\BR~l"
+    ],
+    [
+        "\\hex{0E}~~l^\\ast{:}\\Bvec(\\Blabelidx)~~l_N{:}\\Blabelidx\n       ",
+        "\\BRTABLE~l^\\ast~l_N"
+    ],
+    [
+        "\\hex{11}~~y{:}\\Btypeidx~~x{:}\\Btableidx ",
+        "\\CALLINDIRECT~x~y"
+    ],
+    [
+        "\\hex{D0}~~t{:}\\Breftype ",
+        "\\REFNULL~t"
+    ],
+    [
+        "\\hex{1C}~~t^\\ast{:}\\Bvec(\\Bvaltype) ",
+        "\\SELECT~t^\\ast"
+    ],
+    [
+        "\\hex{24}~~x{:}\\Bglobalidx ",
+        "\\GLOBALSET~x"
+    ],
+    [
+        "\\hex{25}~~x{:}\\Btableidx ",
+        "\\TABLEGET~x"
+    ],
+    [
+        "\\hex{FC}~~12{:}\\Bu32~~y{:}\\Belemidx~~x{:}\\Btableidx ",
+        "\\TABLEINIT~x~y"
+    ],
+    [
+        "\\hex{FC}~~14{:}\\Bu32~~x{:}\\Btableidx~~y{:}\\Btableidx ",
+        "\\TABLECOPY~x~y"
+    ],
+    [
+        "\\hex{FC}~~15{:}\\Bu32~~x{:}\\Btableidx ",
+        "\\TABLEGROW~x"
+    ],
+    [
+        "\\hex{28}~~m{:}\\Bmemarg ",
+        "\\I32.\\LOAD~m"
+    ],
+    [
+        "\\hex{2C}~~m{:}\\Bmemarg ",
+        "\\I32.\\LOAD\\K{8\\_s}~m"
+    ],
+    [
+        "\\hex{40}~~\\hex{00} ",
+        "\\MEMORYGROW"
+    ],
+    [
+        "\\hex{FC}~~8{:}\\Bu32~~x{:}\\Bdataidx~\\hex{00} ",
+        "\\MEMORYINIT~x"
+    ],
+    [
+        "\\hex{FC}~~9{:}\\Bu32~~x{:}\\Bdataidx ",
+        "\\DATADROP~x"
+    ],
+    [
+        "\\hex{FC}~~11{:}\\Bu32~~\\hex{00} ",
+        "\\MEMORYFILL"
+    ],
+    [
+        "\\hex{41}~~n{:}\\Bi32 ",
+        "\\I32.\\CONST~n"
+    ],
+    [
+        "\\hex{47} ",
+        "\\I32.\\NE"
+    ],
+    [
+        "\\hex{4A} ",
+        "\\I32.\\GT\\K{\\_s}"
+    ],
+    [
+        "\\hex{A8} ",
+        "\\I32.\\TRUNC\\K{\\_}\\F32\\K{\\_s}"
+    ],
+    [
+        "\\hex{FC}~~7{:}\\Bu32 ",
+        "\\I64.\\TRUNC\\K{\\_sat\\_}\\F64\\K{\\_u}"
+    ],
+    [
+        "\\hex{FD}~~2{:}\\Bu32~~m{:}\\Bmemarg ",
+        "\\V128.\\LOAD\\K{8x8\\_u}~m"
+    ],
+    [
+        "\\hex{FD}~~87{:}\\Bu32~~m{:}\\Bmemarg~l{:}\\Blaneidx ",
+        "\\V128.\\LOAD\\K{64\\_lane}~m~l"
+    ],
+    [
+        "\\hex{FD}~~12{:}\\Bu32~~(b{:}\\Bbyte)^{16} ",
+        "\\V128.\\VCONST~\n     \\bytes_{\\K{i128}}^{-1}(b_{0}~\\dots~b_{15})"
+    ],
+    [
+        "\\hex{FD}~~13{:}\\Bu32~~(l{:}\\Blaneidx)^{16} ",
+        "\\I8X16.\\SHUFFLE~l^{16}"
+    ]
+]

@@ -1,0 +1,22 @@
+5. :ref:`Execute <exec-local.set>` the instruction :math:`(\LOCALSET~x)`.
+15. Execute the instruction :math:`\TABLESET~x`.
+19. Execute the instruction :math:`\TABLEFILL~x`.
+   c. Execute the instruction :math:`\TABLEGET~y`.
+   d. Execute the instruction :math:`\TABLESET~x`.
+   c. Execute the instruction :math:`\TABLEGET~y`.
+   f. Execute the instruction :math:`\TABLESET~x`.
+21. Execute the instruction :math:`\TABLECOPY~x~y`.
+21. Execute the instruction :math:`\TABLESET~x`.
+27. Execute the instruction :math:`\TABLEINIT~x~y`.
+16. Execute the instruction :math:`\I32\K{.}\STORE\K{8}~\{ \OFFSET~0, \ALIGN~0 \}`.
+21. Execute the instruction :math:`\MEMORYFILL`.
+   c. Execute the instruction :math:`\I32\K{.}\LOAD\K{8\_u}~\{ \OFFSET~0, \ALIGN~0 \}`.
+   d. Execute the instruction :math:`\I32\K{.}\STORE\K{8}~\{ \OFFSET~0, \ALIGN~0 \}`.
+   e. Execute the instruction :math:`\I32\K{.}\LOAD\K{8\_u}~\{ \OFFSET~0, \ALIGN~0 \}`.
+   f. Execute the instruction :math:`\I32\K{.}\STORE\K{8}~\{ \OFFSET~0, \ALIGN~0 \}`.
+17. Execute the instruction :math:`\MEMORYCOPY`.
+21. Execute the instruction :math:`\I32\K{.}\STORE\K{8}~\{ \OFFSET~0, \ALIGN~0 \}`.
+27. Execute the instruction :math:`\MEMORYINIT~x`.
+   a. :ref:`Execute <exec-br>` the instruction :math:`(\BR~l)`.
+   b. :ref:`Execute <exec-br>` the instruction :math:`(\BR~l_i)`.
+   a. :ref:`Execute <exec-br>` the instruction :math:`(\BR~l_N)`.

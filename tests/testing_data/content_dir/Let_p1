@@ -1,0 +1,40 @@
+   a. Let :math:`c` be a possible result of computing :math:`\unop_t(c_1)`.
+   a. Let :math:`c` be a possible result of computing :math:`\binop_t(c_1, c_2)`.
+3. Let :math:`c` be the result of computing :math:`\testop_t(c_1)`.
+4. Let :math:`c` be the result of computing :math:`\relop_t(c_1, c_2)`.
+   a. Let :math:`c_2` be a possible result of computing :math:`\cvtop^{\sx^?}_{t_1,t_2}(c_1)`.
+3. Let :math:`c` be the result of computing :math:`\vvunop_{\I128}(c_1)`.
+4. Let :math:`c` be the result of computing :math:`\vvbinop_{\I128}(c_1, c_2)`.
+5. Let :math:`c` be the result of computing :math:`\vvternop_{\I128}(c_1, c_2, c_3)`.
+3. Let :math:`i` be the result of computing :math:`\ine_{128}(c_1, 0)`.
+7. Let :math:`c'` be the result of :math:`\lanes^{-1}_{i8x16}(c^\ast[ i^\ast[0] ] \dots c^\ast[ i^\ast[15] ])`.
+8. Let :math:`c` be the result of :math:`\lanes^{-1}_{i8x16}(i^\ast[x^\ast[0]] \dots i^\ast[x^\ast[15]])`.
+5. Let :math:`c` be the result of :math:`\lanes^{-1}_{\shape}(c_1^N)`.
+6. Let :math:`c_2` be the result of computing :math:`\extend^{sx^?}_{t_1,t_2}(i^\ast[x])`.
+8. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{\shape}(i^\ast \with [x] = c_1)`
+3. Let :math:`c` be the result of computing :math:`\vunop_{\shape}(c_1)`.
+   a. Let :math:`c` be a possible result of computing :math:`\vbinop_{\shape}(c_1, c_2)`.
+6. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{t\K{x}N}(\extends_{1,|t|}(\vrelop_t(i^\ast, j^\ast)))`.
+4. Let :math:`i` be the result of computing :math:`\bool(\bigwedge(i_1 \neq 0)^\ast)`.
+5. Let :math:`i_2^N` be the sequence as a result of computing :math:`\ilts_{B}(i_1^N, 0^N)`.
+4. Let :math:`d_2^M` be the result of computing :math:`\narrow^{\sx}_{|t_1|,|t_2|}(\lanes_{t_1\K{x}M}(c_2))`.
+6. Let :math:`d_1^M` be the result of computing :math:`\narrow^{\sx}_{|t_1|,|t_2|}(\lanes_{t_1\K{x}M}(c_1))`.
+7. Let :math:`c` be the result of :math:`\lanes^{-1}_{t_2\K{x}N}(d_1^M~d_2^M)`.
+4. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{t_2\K{x}N}(\vcvtop^{\sx}_{|t_1|,|t_2|}(i^\ast))`
+5. Let :math:`j^\ast` be the result of computing :math:`\vcvtop^{\sx^?}_{|t_1|,|t_2|}(i^\ast)`.
+6. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{t_2\K{x}N}(j^\ast)`.
+4. Let :math:`j^\ast` be the result of computing :math:`\vcvtop^{\sx}_{|t_1|,|t_2|}(i^\ast)` concatenated with the vector :math:`0^M`.
+5. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{t_2\K{x}N}(j^\ast)`.
+4. Let :math:`(i_1~i_2)^\ast` be the result of computing :math:`\imul_{32}(\extends_{16,32}(\lanes_{\I16X8}(c_1)), \extends_{16,32}(\lanes_{\I16X8}(c_2)))`
+5. Let :math:`j^\ast` be the result of computing :math:`\iadd_{32}(i_1, i_2)^\ast`.
+6. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{\I32X4}(j^\ast)`.
+6. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{t_2\K{x}N}(\imul_{t_2\K{x}N}(\extend^{\sx}_{|t_1|,|t_2|}(i^\ast), \extend^{\sx}_{|t_1|,|t_2|}(j^\ast)))`
+4. Let :math:`j^\ast` be the result of computing :math:`\iadd_{N}(i_1, i_2)^\ast`.
+5. Let `c` be the result of computing :math:`\lanes^{-1}_{t_2\K{x}N}(j^\ast)`.
+    b. Let :math:`c` be the result of computing :math:`\extend^{\sx}_{N,|t|}(n)`.
+13. Let :math:`n_k` be the result of :math:`\extend^{\sx}_{M,W}(m_k)`.
+14. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{\X{i}W\K{x}N}(n_0 \dots n_{N-1})`.
+13. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{\iN\K{x}L}(n^L)`.
+12. Let :math:`c` be the result of :math:`\extendu_{N,128}(n)`.
+15. Let :math:`c` be the result of computing :math:`\lanes^{-1}_{\K{i}N\K{x}L}(\lanes_{\K{i}N\K{x}L}(v) \with [x] = r)`.
+    a. Let :math:`n` be the result of computing :math:`\wrap_{|t|,N}(c)`.

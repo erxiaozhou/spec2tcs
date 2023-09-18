@@ -1,0 +1,26 @@
+[
+    [
+        "\\hex{28}~~m{:}\\Bmemarg ",
+        "\\I32.\\LOAD~m"
+    ],
+    [
+        "\\hex{2C}~~m{:}\\Bmemarg ",
+        "\\I32.\\LOAD\\K{8\\_s}~m"
+    ],
+    [
+        "\\hex{40}~~\\hex{00} ",
+        "\\MEMORYGROW"
+    ],
+    [
+        "\\hex{FC}~~8{:}\\Bu32~~x{:}\\Bdataidx~\\hex{00} ",
+        "\\MEMORYINIT~x"
+    ],
+    [
+        "\\hex{FC}~~9{:}\\Bu32~~x{:}\\Bdataidx ",
+        "\\DATADROP~x"
+    ],
+    [
+        "\\hex{FC}~~11{:}\\Bu32~~\\hex{00} ",
+        "\\MEMORYFILL"
+    ]
+]

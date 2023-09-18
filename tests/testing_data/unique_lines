@@ -1,0 +1,89 @@
+Else:
+For all :math:`\laneidx_i`, in :math:`\laneidx^{16}`, :math:`\laneidx_i` must be smaller than :math:`32`.
+For all :math:`l_i` in :math:`l^\ast`, and for each :ref:`operand type <syntax-opdtype>` :math:`t_j` in :math:`t^\ast` and corresponding type :math:`t'_{ij}` in :math:`C.\CLABELS[l_i]`, :math:`t_j` :ref:`matches <match-opdtype>` :math:`t'_{ij}`.
+For all :math:`l_i` in :math:`l^\ast`, the label :math:`C.\CLABELS[l_i]` must be defined in the context.
+For each :ref:`operand type <syntax-opdtype>` :math:`t_j` in :math:`t^\ast` and corresponding type :math:`t'_{Nj}` in :math:`C.\CLABELS[l_N]`, :math:`t_j` :ref:`matches <match-opdtype>` :math:`t'_{Nj}`.
+If :math:`t^\ast` is present, then:
+Let :math:`C'` be the same :ref:`context <context>` as :math:`C`, but with the :ref:`result type <syntax-resulttype>` :math:`[t_1^\ast]` prepended to the |CLABELS| vector.
+Let :math:`C'` be the same :ref:`context <context>` as :math:`C`, but with the :ref:`result type <syntax-resulttype>` :math:`[t_2^\ast]` prepended to the |CLABELS| vector.
+Let :math:`[t^\ast]` be the :ref:`result type <syntax-resulttype>` :math:`C.\CLABELS[l]`.
+Let :math:`[t^\ast]` be the :ref:`result type <syntax-resulttype>` of :math:`C.\CRETURN`.
+Let :math:`[t_1^\ast] \to [t_2^\ast]` be the :ref:`function type <syntax-functype>` :math:`C.\CTYPES[y]`.
+Let :math:`\limits_1~t_1` be the :ref:`table type <syntax-tabletype>` :math:`C.\CTABLES[x]`.
+Let :math:`\limits_2~t_2` be the :ref:`table type <syntax-tabletype>` :math:`C.\CTABLES[y]`.
+Let :math:`\limits~t_1` be the :ref:`table type <syntax-tabletype>` :math:`C.\CTABLES[x]`.
+Let :math:`\limits~t` be the :ref:`table type <syntax-tabletype>` :math:`C.\CTABLES[x]`.
+Let :math:`\mut~t` be the :ref:`global type <syntax-globaltype>` :math:`C.\CGLOBALS[x]`.
+Let :math:`t_2` be the :ref:`reference type <syntax-reftype>` :math:`C.\CELEMS[y]`.
+Let :math:`t` be :math:`\unpacked(\shape)`.
+Let :math:`t` be the :ref:`value type <syntax-valtype>` :math:`C.\CLOCALS[x]`.
+The :ref:`block type <syntax-blocktype>` must be :ref:`valid <valid-blocktype>` as some :ref:`function type <syntax-functype>` :math:`[t_1^\ast] \to [t_2^\ast]`.
+The :ref:`function index <syntax-funcidx>` :math:`x` must be contained in :math:`C.\CREFS`.
+The :ref:`reference type <syntax-reftype>` :math:`t_1` must be the same as :math:`t_2`.
+The :ref:`reference type <syntax-reftype>` :math:`t` must be |FUNCREF|.
+The alignment :math:`2^{\memarg.\ALIGN}` must not be larger than :math:`N/8 \cdot M`.
+The alignment :math:`2^{\memarg.\ALIGN}` must not be larger than :math:`N/8`.
+The alignment :math:`2^{\memarg.\ALIGN}` must not be larger than the :ref:`bit width <syntax-numtype>` of :math:`t` divided by :math:`8`.
+The data segment :math:`C.\CDATAS[x]` must be defined in the context.
+The element segment :math:`C.\CELEMS[x]` must be defined in the context.
+The element segment :math:`C.\CELEMS[y]` must be defined in the context.
+The function :math:`C.\CFUNCS[x]` must be defined in the context.
+The global :math:`C.\CGLOBALS[x]` must be defined in the context.
+The instruction is valid with type :math:`[\V128] \to [\I32]`.
+The instruction is valid with type :math:`[\V128] \to [\V128]`.
+The instruction is valid with type :math:`[\V128] \to [\unpacked(\shape)]`.
+The instruction is valid with type :math:`[\V128~\I32] \to [\V128]`.
+The instruction is valid with type :math:`[\V128~\V128] \to [\V128]`.
+The instruction is valid with type :math:`[\V128~\V128~\V128] \to [\V128]`.
+The instruction is valid with type :math:`[\V128~t] \to [\V128]`.
+The instruction is valid with type :math:`[] \to [\FUNCREF]`.
+The instruction is valid with type :math:`[] \to [\V128]`.
+The instruction is valid with type :math:`[] \to []`.
+The instruction is valid with type :math:`[] \to [t]`.
+The instruction is valid with type :math:`[t] \to [\I32]`, for any :ref:`reference type <syntax-reftype>` :math:`t`.
+The instruction is valid with type :math:`[t] \to [\I32]`.
+The instruction is valid with type :math:`[t] \to [\V128]`.
+The instruction is valid with type :math:`[t] \to []`, for any :ref:`value type <syntax-valtype>` :math:`t`.
+The instruction is valid with type :math:`[t] \to [t]`.
+The instruction is valid with type :math:`[t_1] \to [t_2]`.
+The instruction is valid with type :math:`[t_1^\ast] \to [t_2^\ast]`, for any sequences of :ref:`value types <syntax-valtype>` :math:`t_1^\ast` and :math:`t_2^\ast`.
+The instruction is valid with type :math:`[t~t] \to [\I32]`.
+The instruction is valid with type :math:`[t~t] \to [t]`.
+The instruction is valid with type :math:`[t~t~\I32] \to [t]`, for any :ref:`operand type <syntax-opdtype>` :math:`t` that :ref:`matches <match-opdtype>` some :ref:`number type <syntax-numtype>` or :ref:`vector type <syntax-vectype>`.
+The label :math:`C.\CLABELS[l]` must be defined in the context.
+The label :math:`C.\CLABELS[l_N]` must be defined in the context.
+The lane index :math:`\laneidx` must be smaller than :math:`128/N`.
+The lane index :math:`\laneidx` must be smaller than :math:`\dim(\shape)`.
+The length of :math:`t^\ast` must be :math:`1`.
+The local :math:`C.\CLOCALS[x]` must be defined in the context.
+The memory :math:`C.\CMEMS[0]` must be defined in the context.
+The mutability :math:`\mut` must be |MVAR|.
+The return type :math:`C.\CRETURN` must not be absent in the context.
+The table :math:`C.\CTABLES[x]` must be defined in the context.
+The table :math:`C.\CTABLES[y]` must be defined in the context.
+The type :math:`C.\CTYPES[y]` must be defined in the context.
+Then the compound instruction is valid with type :math:`[t_1^\ast] \to [t_2^\ast]`.
+Then the compound instruction is valid with type :math:`[t_1^\ast~\I32] \to [t_2^\ast]`.
+Then the instruction is valid with type :math:`C.\CFUNCS[x]`.
+Then the instruction is valid with type :math:`[\I32] \to [\I32]`.
+Then the instruction is valid with type :math:`[\I32] \to [\V128]`.
+Then the instruction is valid with type :math:`[\I32] \to [t]`.
+Then the instruction is valid with type :math:`[\I32~\I32~\I32] \to []`.
+Then the instruction is valid with type :math:`[\I32~\V128] \to [\V128]`.
+Then the instruction is valid with type :math:`[\I32~t] \to []`.
+Then the instruction is valid with type :math:`[\I32~t~\I32] \to []`.
+Then the instruction is valid with type :math:`[] \to [\I32]`.
+Then the instruction is valid with type :math:`[] \to []`.
+Then the instruction is valid with type :math:`[] \to [t]`.
+Then the instruction is valid with type :math:`[t] \to []`.
+Then the instruction is valid with type :math:`[t] \to [t]`.
+Then the instruction is valid with type :math:`[t^\ast~\I32] \to [t^\ast]`.
+Then the instruction is valid with type :math:`[t^\ast~t^\ast~\I32] \to [t^\ast]`.
+Then the instruction is valid with type :math:`[t_1^\ast~\I32] \to [t_2^\ast]`.
+Then the instruction is valid with type :math:`[t_1^\ast~t^\ast] \to [t_2^\ast]`, for any sequences of :ref:`value types <syntax-valtype>` :math:`t_1^\ast` and :math:`t_2^\ast`.
+Then the instruction is valid with type :math:`[t_1^\ast~t^\ast~\I32] \to [t_2^\ast]`, for any sequences of :ref:`value types <syntax-valtype>` :math:`t_1^\ast` and :math:`t_2^\ast`.
+Then the instruction is valid with type :math:`[t~\I32] \to [\I32]`.
+There must be a :ref:`result type <syntax-resulttype>` :math:`[t^\ast]`, such that:
+Under context :math:`C'`, the instruction sequence :math:`\instr^\ast` must be :ref:`valid <valid-instr-seq>` with type :math:`[t_1^\ast] \to [t_2^\ast]`.
+Under context :math:`C'`, the instruction sequence :math:`\instr_1^\ast` must be :ref:`valid <valid-instr-seq>` with type :math:`[t_1^\ast] \to [t_2^\ast]`.
+Under context :math:`C'`, the instruction sequence :math:`\instr_2^\ast` must be :ref:`valid <valid-instr-seq>` with type :math:`[t_1^\ast] \to [t_2^\ast]`.

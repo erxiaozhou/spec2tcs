@@ -1,0 +1,89 @@
+1. Push the value :math:`t.\CONST~c` to the stack.
+   b. Push the value :math:`t.\CONST~c` to the stack.
+   b. Push the value :math:`t.\CONST~c` to the stack.
+4. Push the value :math:`\I32.\CONST~c` to the stack.
+5. Push the value :math:`\I32.\CONST~c` to the stack.
+   b. Push the value :math:`t_2.\CONST~c_2` to the stack.
+1. Push the value :math:`\REFNULL~t` to the stack.
+   a. Push the value :math:`\I32.\CONST~1` to the stack.
+   a. Push the value :math:`\I32.\CONST~0` to the stack.
+4. Push the value :math:`\REFFUNCADDR~a` to the stack.
+1. Push the value :math:`\V128.\VCONST~c` to the stack.
+4. Push the value :math:`\V128.\VCONST~c` to the stack.
+5. Push the value :math:`\V128.\VCONST~c` to the stack.
+6. Push the value :math:`\V128.\VCONST~c` to the stack.
+4. Push the value :math:`\I32.\CONST~i` onto the stack.
+8. Push the value :math:`\V128.\VCONST~c'` onto the stack.
+9. Push the value :math:`\V128.\VCONST~c` onto the stack.
+6. Push the value :math:`\V128.\VCONST~c` to the stack.
+7. Push the value :math:`t_2.\CONST~c_2` to the stack.
+9. Push :math:`\V128.\VCONST~c` on the stack.
+4. Push the value :math:`\V128.\VCONST~c` to the stack.
+   b. Push the value :math:`\V128.\VCONST~c` to the stack.
+7. Push the value :math:`\V128.\VCONST~c` to the stack.
+7. Push the value :math:`\V128.\VCONST~c` to the stack.
+5. Push the value :math:`\I32.\CONST~i` onto the stack.
+7. Push the value :math:`\I32.\CONST~c` onto the stack.
+8. Push the value :math:`\V128.\VCONST~c` onto the stack.
+5. Push the value :math:`\V128.\VCONST~c` onto the stack.
+7. Push the value :math:`\V128.\VCONST~c` onto the stack.
+6. Push the value :math:`\V128.\VCONST~c` onto the stack.
+7. Push the value :math:`\V128.\VCONST~c` onto the stack.
+7. Push the value :math:`\V128.\VCONST~c` onto the stack.
+6. Push the value :math:`\V128.\VCONST~c` to the stack.
+   a. Push the value :math:`\val_1` back to the stack.
+   a. Push the value :math:`\val_2` back to the stack.
+4. Push the value :math:`\val` to the stack.
+3. Push the value :math:`\val` to the stack.
+4. Push the value :math:`\val` to the stack.
+7. Push the value :math:`\val` to the stack.
+10. Push the value :math:`\val` to the stack.
+7. Push the value :math:`\I32.\CONST~\X{sz}` to the stack.
+12. Or, push the value :math:`\I32.\CONST~(-1)` to the stack.
+13. Push the value :math:`\I32.\CONST~i` to the stack.
+14. Push the value :math:`\val` to the stack.
+16. Push the value :math:`\I32.\CONST~(i+1)` to the stack.
+17. Push the value :math:`\val` to the stack.
+18. Push the value :math:`\I32.\CONST~(n-1)` to the stack.
+   a. Push the value :math:`\I32.\CONST~d` to the stack.
+   b. Push the value :math:`\I32.\CONST~s` to the stack.
+   f. Push the value :math:`\I32.\CONST~(d+1)` to the stack.
+   h. Push the value :math:`\I32.\CONST~(s+1)` to the stack.
+   b. Push the value :math:`\I32.\CONST~(d+n-1)` to the stack.
+   d. Push the value :math:`\I32.\CONST~(s+n-1)` to the stack.
+   g. Push the value :math:`\I32.\CONST~d` to the stack.
+   h. Push the value :math:`\I32.\CONST~s` to the stack.
+20. Push the value :math:`\I32.\CONST~(n-1)` to the stack.
+19. Push the value :math:`\I32.\CONST~d` to the stack.
+20. Push the value :math:`\val` to the stack.
+23. Push the value :math:`\I32.\CONST~(d+1)` to the stack.
+25. Push the value :math:`\I32.\CONST~(s+1)` to the stack.
+26. Push the value :math:`\I32.\CONST~(n-1)` to the stack.
+14. Push the value :math:`t.\CONST~c` to the stack.
+15. Push the value :math:`\V128.\CONST~c` to the stack.
+14. Push the value :math:`\V128.\CONST~c` to the stack.
+13. Push the value :math:`\V128.\CONST~c` to the stack.
+16. Push the value :math:`\V128.\CONST~c` to the stack.
+7. Push the value :math:`\I32.\CONST~\X{sz}` to the stack.
+11. Or, push the value :math:`\I32.\CONST~\X{err}` to the stack.
+14. Push the value :math:`\I32.\CONST~d` to the stack.
+15. Push the value :math:`\val` to the stack.
+18. Push the value :math:`\I32.\CONST~(d+1)` to the stack.
+19. Push the value :math:`\val` to the stack.
+20. Push the value :math:`\I32.\CONST~(n-1)` to the stack.
+   a. Push the value :math:`\I32.\CONST~d` to the stack.
+   b. Push the value :math:`\I32.\CONST~s` to the stack.
+   f. Push the value :math:`\I32.\CONST~(d+1)` to the stack.
+   h. Push the value :math:`\I32.\CONST~(s+1)` to the stack.
+   b. Push the value :math:`\I32.\CONST~(d+n-1)` to the stack.
+   d. Push the value :math:`\I32.\CONST~(s+n-1)` to the stack.
+   g. Push the value :math:`\I32.\CONST~d` to the stack.
+   h. Push the value :math:`\I32.\CONST~s` to the stack.
+16. Push the value :math:`\I32.\CONST~(n-1)` to the stack.
+19. Push the value :math:`\I32.\CONST~d` to the stack.
+20. Push the value :math:`\I32.\CONST~b` to the stack.
+23. Push the value :math:`\I32.\CONST~(d+1)` to the stack.
+25. Push the value :math:`\I32.\CONST~(s+1)` to the stack.
+26. Push the value :math:`\I32.\CONST~(n-1)` to the stack.
+7. Push the values :math:`\val^n` to the stack.
+9. Push :math:`\val^n` to the stack.

@@ -1,0 +1,13 @@
+{
+    "python.formatting.provider": "none",
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/document": true,
+        "**/*.wat": true,
+        "**/*.wasm": true
+      },
+      "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+      },
+}

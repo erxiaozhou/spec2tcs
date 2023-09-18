@@ -1,0 +1,13 @@
+{
+    "exec_condig_para": {
+        "consider_illegal_op": true,
+        "only_non_trap": false,
+        "limit_ty_candidates_on_failed_ty_trap": false,
+        "limit_val_cnaditaions_on_failed_ty_trap": true
+    },
+    "base_dir": "generated_tcs/v19",
+    "template_strategy": "8",
+    "remove_existing": true,
+    "save_meta_data": true,
+    "solution_num": 3
+}

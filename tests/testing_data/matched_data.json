@@ -1,0 +1,581 @@
+{
+    ":math:`t_2\\K{.}\\cvtop\\K{\\_}t_1\\K{\\_}\\sx^?`": [
+        "\\K{i32.}\\WRAP\\K{\\_i64}",
+        "\\K{i64.}\\EXTEND\\K{\\_i32}\\K{\\_}\\K{u}",
+        "\\K{i64.}\\EXTEND\\K{\\_i32}\\K{\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\TRUNC\\K{\\_f}\\K{32}\\K{\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\TRUNC\\K{\\_f}\\K{32}\\K{\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\TRUNC\\K{\\_f}\\K{64}\\K{\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\TRUNC\\K{\\_f}\\K{64}\\K{\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\TRUNC\\K{\\_f}\\K{32}\\K{\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\TRUNC\\K{\\_f}\\K{32}\\K{\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\TRUNC\\K{\\_f}\\K{64}\\K{\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\TRUNC\\K{\\_f}\\K{64}\\K{\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\TRUNC\\K{\\_sat\\_f}\\K{32}\\K{\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\TRUNC\\K{\\_sat\\_f}\\K{32}\\K{\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\TRUNC\\K{\\_sat\\_f}\\K{64}\\K{\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\TRUNC\\K{\\_sat\\_f}\\K{64}\\K{\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\TRUNC\\K{\\_sat\\_f}\\K{32}\\K{\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\TRUNC\\K{\\_sat\\_f}\\K{32}\\K{\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\TRUNC\\K{\\_sat\\_f}\\K{64}\\K{\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\TRUNC\\K{\\_sat\\_f}\\K{64}\\K{\\_}\\K{s}",
+        "\\K{f32.}\\DEMOTE\\K{\\_f64}",
+        "\\K{f64.}\\PROMOTE\\K{\\_f32}",
+        "\\K{f}\\K{32}\\K{.}\\CONVERT\\K{\\_i}\\K{32}\\K{\\_}\\K{u}",
+        "\\K{f}\\K{32}\\K{.}\\CONVERT\\K{\\_i}\\K{32}\\K{\\_}\\K{s}",
+        "\\K{f}\\K{32}\\K{.}\\CONVERT\\K{\\_i}\\K{64}\\K{\\_}\\K{u}",
+        "\\K{f}\\K{32}\\K{.}\\CONVERT\\K{\\_i}\\K{64}\\K{\\_}\\K{s}",
+        "\\K{f}\\K{64}\\K{.}\\CONVERT\\K{\\_i}\\K{32}\\K{\\_}\\K{u}",
+        "\\K{f}\\K{64}\\K{.}\\CONVERT\\K{\\_i}\\K{32}\\K{\\_}\\K{s}",
+        "\\K{f}\\K{64}\\K{.}\\CONVERT\\K{\\_i}\\K{64}\\K{\\_}\\K{u}",
+        "\\K{f}\\K{64}\\K{.}\\CONVERT\\K{\\_i}\\K{64}\\K{\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\REINTERPRET\\K{\\_f}\\K{32}",
+        "\\K{i}\\K{64}\\K{.}\\REINTERPRET\\K{\\_f}\\K{64}",
+        "\\K{f}\\K{32}\\K{.}\\REINTERPRET\\K{\\_i}\\K{32}",
+        "\\K{f}\\K{64}\\K{.}\\REINTERPRET\\K{\\_i}\\K{64}"
+    ],
+    ":math:`t\\K{.}\\CONST~c`": [
+        "\\K{i}\\K{32}\\K{.}\\CONST~\\xref{syntax/values}{syntax-int}{\\iX{\\K{32}}}",
+        "\\K{i}\\K{64}\\K{.}\\CONST~\\xref{syntax/values}{syntax-int}{\\iX{\\K{64}}}",
+        "\\K{f}\\K{32}\\K{.}\\CONST~\\xref{syntax/values}{syntax-float}{\\fX{\\K{32}}}",
+        "\\K{f}\\K{64}\\K{.}\\CONST~\\xref{syntax/values}{syntax-float}{\\fX{\\K{64}}}"
+    ],
+    ":math:`t\\K{.}\\testop`": [
+        "\\K{i}\\K{32}\\K{.}\\K{eqz}",
+        "\\K{i}\\K{64}\\K{.}\\K{eqz}"
+    ],
+    ":math:`t\\K{.}\\binop`": [
+        "\\K{i}\\K{32}\\K{.}\\K{add}",
+        "\\K{i}\\K{32}\\K{.}\\K{sub}",
+        "\\K{i}\\K{32}\\K{.}\\K{mul}",
+        "\\K{i}\\K{32}\\K{.}\\K{div\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\K{div\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\K{rem\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\K{rem\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\K{and}",
+        "\\K{i}\\K{32}\\K{.}\\K{or}",
+        "\\K{i}\\K{32}\\K{.}\\K{xor}",
+        "\\K{i}\\K{32}\\K{.}\\K{shl}",
+        "\\K{i}\\K{32}\\K{.}\\K{shr\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\K{shr\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\K{rotl}",
+        "\\K{i}\\K{32}\\K{.}\\K{rotr}",
+        "\\K{i}\\K{64}\\K{.}\\K{add}",
+        "\\K{i}\\K{64}\\K{.}\\K{sub}",
+        "\\K{i}\\K{64}\\K{.}\\K{mul}",
+        "\\K{i}\\K{64}\\K{.}\\K{div\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\K{div\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\K{rem\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\K{rem\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\K{and}",
+        "\\K{i}\\K{64}\\K{.}\\K{or}",
+        "\\K{i}\\K{64}\\K{.}\\K{xor}",
+        "\\K{i}\\K{64}\\K{.}\\K{shl}",
+        "\\K{i}\\K{64}\\K{.}\\K{shr\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\K{shr\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\K{rotl}",
+        "\\K{i}\\K{64}\\K{.}\\K{rotr}",
+        "\\K{f}\\K{32}\\K{.}\\K{add}",
+        "\\K{f}\\K{32}\\K{.}\\K{sub}",
+        "\\K{f}\\K{32}\\K{.}\\K{mul}",
+        "\\K{f}\\K{32}\\K{.}\\K{div}",
+        "\\K{f}\\K{32}\\K{.}\\K{min}",
+        "\\K{f}\\K{32}\\K{.}\\K{max}",
+        "\\K{f}\\K{32}\\K{.}\\K{copysign}",
+        "\\K{f}\\K{64}\\K{.}\\K{add}",
+        "\\K{f}\\K{64}\\K{.}\\K{sub}",
+        "\\K{f}\\K{64}\\K{.}\\K{mul}",
+        "\\K{f}\\K{64}\\K{.}\\K{div}",
+        "\\K{f}\\K{64}\\K{.}\\K{min}",
+        "\\K{f}\\K{64}\\K{.}\\K{max}",
+        "\\K{f}\\K{64}\\K{.}\\K{copysign}"
+    ],
+    ":math:`t\\K{.}\\relop`": [
+        "\\K{i}\\K{32}\\K{.}\\K{eq}",
+        "\\K{i}\\K{32}\\K{.}\\K{ne}",
+        "\\K{i}\\K{32}\\K{.}\\K{lt\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\K{lt\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\K{gt\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\K{gt\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\K{le\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\K{le\\_}\\K{s}",
+        "\\K{i}\\K{32}\\K{.}\\K{ge\\_}\\K{u}",
+        "\\K{i}\\K{32}\\K{.}\\K{ge\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\K{eq}",
+        "\\K{i}\\K{64}\\K{.}\\K{ne}",
+        "\\K{i}\\K{64}\\K{.}\\K{lt\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\K{lt\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\K{gt\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\K{gt\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\K{le\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\K{le\\_}\\K{s}",
+        "\\K{i}\\K{64}\\K{.}\\K{ge\\_}\\K{u}",
+        "\\K{i}\\K{64}\\K{.}\\K{ge\\_}\\K{s}",
+        "\\K{f}\\K{32}\\K{.}\\K{eq}",
+        "\\K{f}\\K{32}\\K{.}\\K{ne}",
+        "\\K{f}\\K{32}\\K{.}\\K{lt}",
+        "\\K{f}\\K{32}\\K{.}\\K{gt}",
+        "\\K{f}\\K{32}\\K{.}\\K{le}",
+        "\\K{f}\\K{32}\\K{.}\\K{ge}",
+        "\\K{f}\\K{64}\\K{.}\\K{eq}",
+        "\\K{f}\\K{64}\\K{.}\\K{ne}",
+        "\\K{f}\\K{64}\\K{.}\\K{lt}",
+        "\\K{f}\\K{64}\\K{.}\\K{gt}",
+        "\\K{f}\\K{64}\\K{.}\\K{le}",
+        "\\K{f}\\K{64}\\K{.}\\K{ge}"
+    ],
+    ":math:`t\\K{.}\\unop`": [
+        "\\K{i}\\K{32}\\K{.}\\K{clz}",
+        "\\K{i}\\K{32}\\K{.}\\K{ctz}",
+        "\\K{i}\\K{32}\\K{.}\\K{popcnt}",
+        "\\K{i}\\K{64}\\K{.}\\K{clz}",
+        "\\K{i}\\K{64}\\K{.}\\K{ctz}",
+        "\\K{i}\\K{64}\\K{.}\\K{popcnt}",
+        "\\K{f}\\K{32}\\K{.}\\K{abs}",
+        "\\K{f}\\K{32}\\K{.}\\K{neg}",
+        "\\K{f}\\K{32}\\K{.}\\K{sqrt}",
+        "\\K{f}\\K{32}\\K{.}\\K{ceil}",
+        "\\K{f}\\K{32}\\K{.}\\K{floor}",
+        "\\K{f}\\K{32}\\K{.}\\K{trunc}",
+        "\\K{f}\\K{32}\\K{.}\\K{nearest}",
+        "\\K{f}\\K{64}\\K{.}\\K{abs}",
+        "\\K{f}\\K{64}\\K{.}\\K{neg}",
+        "\\K{f}\\K{64}\\K{.}\\K{sqrt}",
+        "\\K{f}\\K{64}\\K{.}\\K{ceil}",
+        "\\K{f}\\K{64}\\K{.}\\K{floor}",
+        "\\K{f}\\K{64}\\K{.}\\K{trunc}",
+        "\\K{f}\\K{64}\\K{.}\\K{nearest}",
+        "\\K{i}\\K{32}\\K{.}\\EXTEND\\K{8\\_s}",
+        "\\K{i}\\K{64}\\K{.}\\EXTEND\\K{8\\_s}",
+        "\\K{i}\\K{32}\\K{.}\\EXTEND\\K{16\\_s}",
+        "\\K{i}\\K{64}\\K{.}\\EXTEND\\K{16\\_s}",
+        "\\K{i64.}\\EXTEND\\K{32\\_s}"
+    ],
+    ":math:`\\REFNULL~t`": [
+        "\\REFNULL~\\reftype"
+    ],
+    ":math:`\\REFISNULL`": [
+        "\\REFISNULL"
+    ],
+    ":math:`\\REFFUNC~x`": [
+        "\\REFFUNC~\\funcidx"
+    ],
+    ":math:`t_2\\K{x}N\\K{.}\\vcvtop\\K{\\_}\\half\\K{\\_}t_1\\K{x}M\\K{\\_}\\sx^?`": [
+        "\\K{i16x8.}\\VEXTEND\\K{\\_}\\K{low}\\K{\\_i8x16\\_}\\K{u}",
+        "\\K{i16x8.}\\VEXTEND\\K{\\_}\\K{low}\\K{\\_i8x16\\_}\\K{s}",
+        "\\K{i16x8.}\\VEXTEND\\K{\\_}\\K{high}\\K{\\_i8x16\\_}\\K{u}",
+        "\\K{i16x8.}\\VEXTEND\\K{\\_}\\K{high}\\K{\\_i8x16\\_}\\K{s}",
+        "\\K{i32x4.}\\VEXTEND\\K{\\_}\\K{low}\\K{\\_i16x8\\_}\\K{u}",
+        "\\K{i32x4.}\\VEXTEND\\K{\\_}\\K{low}\\K{\\_i16x8\\_}\\K{s}",
+        "\\K{i32x4.}\\VEXTEND\\K{\\_}\\K{high}\\K{\\_i16x8\\_}\\K{u}",
+        "\\K{i32x4.}\\VEXTEND\\K{\\_}\\K{high}\\K{\\_i16x8\\_}\\K{s}",
+        "\\K{i64x2.}\\VEXTEND\\K{\\_}\\K{low}\\K{\\_i32x4\\_}\\K{u}",
+        "\\K{i64x2.}\\VEXTEND\\K{\\_}\\K{low}\\K{\\_i32x4\\_}\\K{s}",
+        "\\K{i64x2.}\\VEXTEND\\K{\\_}\\K{high}\\K{\\_i32x4\\_}\\K{u}",
+        "\\K{i64x2.}\\VEXTEND\\K{\\_}\\K{high}\\K{\\_i32x4\\_}\\K{s}",
+        "\\K{f64x2.}\\VCONVERT\\K{\\_low\\_i32x4\\_}\\K{u}",
+        "\\K{f64x2.}\\VCONVERT\\K{\\_low\\_i32x4\\_}\\K{s}",
+        "\\K{f64x2.}\\VPROMOTE\\K{\\_low\\_f32x4}"
+    ],
+    ":math:`t_2\\K{x}N\\K{.}\\EXTMUL\\K{\\_}\\half\\K{\\_}t_1\\K{x}M\\K{\\_}\\sx`": [
+        "\\K{i16x8.}\\EXTMUL\\K{\\_}\\K{low}\\K{\\_i8x16\\_}\\K{u}",
+        "\\K{i16x8.}\\EXTMUL\\K{\\_}\\K{low}\\K{\\_i8x16\\_}\\K{s}",
+        "\\K{i16x8.}\\EXTMUL\\K{\\_}\\K{high}\\K{\\_i8x16\\_}\\K{u}",
+        "\\K{i16x8.}\\EXTMUL\\K{\\_}\\K{high}\\K{\\_i8x16\\_}\\K{s}",
+        "\\K{i32x4.}\\EXTMUL\\K{\\_}\\K{low}\\K{\\_i16x8\\_}\\K{u}",
+        "\\K{i32x4.}\\EXTMUL\\K{\\_}\\K{low}\\K{\\_i16x8\\_}\\K{s}",
+        "\\K{i32x4.}\\EXTMUL\\K{\\_}\\K{high}\\K{\\_i16x8\\_}\\K{u}",
+        "\\K{i32x4.}\\EXTMUL\\K{\\_}\\K{high}\\K{\\_i16x8\\_}\\K{s}",
+        "\\K{i64x2.}\\EXTMUL\\K{\\_}\\K{low}\\K{\\_i32x4\\_}\\K{u}",
+        "\\K{i64x2.}\\EXTMUL\\K{\\_}\\K{low}\\K{\\_i32x4\\_}\\K{s}",
+        "\\K{i64x2.}\\EXTMUL\\K{\\_}\\K{high}\\K{\\_i32x4\\_}\\K{u}",
+        "\\K{i64x2.}\\EXTMUL\\K{\\_}\\K{high}\\K{\\_i32x4\\_}\\K{s}"
+    ],
+    ":math:`t_2\\K{x}N\\K{.}\\vcvtop\\K{\\_}t_1\\K{x}M\\K{\\_}\\sx\\K{\\_zero}`": [
+        "\\K{i32x4.}\\VTRUNC\\K{\\_sat\\_f64x2\\_}\\K{u}\\K{\\_zero}",
+        "\\K{i32x4.}\\VTRUNC\\K{\\_sat\\_f64x2\\_}\\K{s}\\K{\\_zero}",
+        "\\K{f32x4.}\\VDEMOTE\\K{\\_f64x2\\_zero}"
+    ],
+    ":math:`t_2\\K{x}N\\K{.}\\NARROW\\K{\\_}t_1\\K{x}M\\K{\\_}\\sx`": [
+        "\\K{i8x16.}\\NARROW\\K{\\_i16x8\\_}\\K{u}",
+        "\\K{i8x16.}\\NARROW\\K{\\_i16x8\\_}\\K{s}",
+        "\\K{i16x8.}\\NARROW\\K{\\_i32x4\\_}\\K{u}",
+        "\\K{i16x8.}\\NARROW\\K{\\_i32x4\\_}\\K{s}"
+    ],
+    ":math:`t_2\\K{x}N\\K{.}\\vcvtop\\K{\\_}t_1\\K{x}M\\K{\\_}\\sx`": [
+        "\\K{i32x4.}\\VTRUNC\\K{\\_sat\\_f32x4\\_}\\K{u}",
+        "\\K{i32x4.}\\VTRUNC\\K{\\_sat\\_f32x4\\_}\\K{s}",
+        "\\K{f32x4.}\\VCONVERT\\K{\\_i32x4\\_}\\K{u}",
+        "\\K{f32x4.}\\VCONVERT\\K{\\_i32x4\\_}\\K{s}"
+    ],
+    ":math:`t_2\\K{x}N\\K{.}\\EXTADDPAIRWISE\\_t_1\\K{x}M\\_\\sx`": [
+        "\\K{i16x8.}\\EXTADDPAIRWISE\\K{\\_i8x16\\_}\\K{u}",
+        "\\K{i16x8.}\\EXTADDPAIRWISE\\K{\\_i8x16\\_}\\K{s}",
+        "\\K{i32x4.}\\EXTADDPAIRWISE\\K{\\_i16x8\\_}\\K{u}",
+        "\\K{i32x4.}\\EXTADDPAIRWISE\\K{\\_i16x8\\_}\\K{s}"
+    ],
+    ":math:`t_1\\K{x}N\\K{.}\\EXTRACTLANE\\K{\\_}\\sx^?~x`": [
+        "\\K{i8x16.}\\EXTRACTLANE\\K{\\_}\\K{u}~\\u8",
+        "\\K{i8x16.}\\EXTRACTLANE\\K{\\_}\\K{s}~\\u8",
+        "\\K{i16x8.}\\EXTRACTLANE\\K{\\_}\\K{u}~\\u8",
+        "\\K{i16x8.}\\EXTRACTLANE\\K{\\_}\\K{s}~\\u8",
+        "\\K{i32x4.}\\EXTRACTLANE~\\u8",
+        "\\K{i64x2.}\\EXTRACTLANE~\\u8",
+        "\\K{f32x4}\\K{.}\\EXTRACTLANE~\\u8",
+        "\\K{f64x2}\\K{.}\\EXTRACTLANE~\\u8"
+    ],
+    ":math:`\\K{i32x4.}\\DOT\\K{\\_i16x8\\_s}`": [
+        "\\K{i32x4.}\\DOT\\K{\\_i16x8\\_s}"
+    ],
+    ":math:`\\K{i8x16.}\\SHUFFLE~x^\\ast`": [
+        "\\K{i8x16.}\\SHUFFLE~\\u8^{16}"
+    ],
+    ":math:`\\shape\\K{.}\\REPLACELANE~x`": [
+        "\\K{i8x16}\\K{.}\\REPLACELANE~\\u8",
+        "\\K{i16x8}\\K{.}\\REPLACELANE~\\u8",
+        "\\K{i32x4}\\K{.}\\REPLACELANE~\\u8",
+        "\\K{i64x2}\\K{.}\\REPLACELANE~\\u8",
+        "\\K{f32x4}\\K{.}\\REPLACELANE~\\u8",
+        "\\K{f64x2}\\K{.}\\REPLACELANE~\\u8"
+    ],
+    ":math:`t\\K{x}N\\K{.}\\vishiftop`": [
+        "\\K{i8x16}\\K{.}\\K{shl}",
+        "\\K{i8x16}\\K{.}\\K{shr\\_}\\K{u}",
+        "\\K{i8x16}\\K{.}\\K{shr\\_}\\K{s}",
+        "\\K{i16x8}\\K{.}\\K{shl}",
+        "\\K{i16x8}\\K{.}\\K{shr\\_}\\K{u}",
+        "\\K{i16x8}\\K{.}\\K{shr\\_}\\K{s}",
+        "\\K{i32x4}\\K{.}\\K{shl}",
+        "\\K{i32x4}\\K{.}\\K{shr\\_}\\K{u}",
+        "\\K{i32x4}\\K{.}\\K{shr\\_}\\K{s}",
+        "\\K{i64x2}\\K{.}\\K{shl}",
+        "\\K{i64x2}\\K{.}\\K{shr\\_}\\K{u}",
+        "\\K{i64x2}\\K{.}\\K{shr\\_}\\K{s}"
+    ],
+    ":math:`t\\K{x}N\\K{.}\\BITMASK`": [
+        "\\K{i8x16}\\K{.}\\BITMASK",
+        "\\K{i16x8}\\K{.}\\BITMASK",
+        "\\K{i32x4}\\K{.}\\BITMASK",
+        "\\K{i64x2}\\K{.}\\BITMASK"
+    ],
+    ":math:`\\V128\\K{.}\\VCONST~c`": [
+        "\\K{v128.}\\VCONST~\\i128"
+    ],
+    ":math:`\\V128\\K{.}\\vvternop`": [
+        "\\K{v128.}\\K{bitselect}"
+    ],
+    ":math:`t\\K{x}N\\K{.}\\vrelop`": [
+        "\\K{i8x16}\\K{.}\\K{eq}",
+        "\\K{i8x16}\\K{.}\\K{ne}",
+        "\\K{i8x16}\\K{.}\\K{lt\\_}\\K{u}",
+        "\\K{i8x16}\\K{.}\\K{lt\\_}\\K{s}",
+        "\\K{i8x16}\\K{.}\\K{gt\\_}\\K{u}",
+        "\\K{i8x16}\\K{.}\\K{gt\\_}\\K{s}",
+        "\\K{i8x16}\\K{.}\\K{le\\_}\\K{u}",
+        "\\K{i8x16}\\K{.}\\K{le\\_}\\K{s}",
+        "\\K{i8x16}\\K{.}\\K{ge\\_}\\K{u}",
+        "\\K{i8x16}\\K{.}\\K{ge\\_}\\K{s}",
+        "\\K{i16x8}\\K{.}\\K{eq}",
+        "\\K{i16x8}\\K{.}\\K{ne}",
+        "\\K{i16x8}\\K{.}\\K{lt\\_}\\K{u}",
+        "\\K{i16x8}\\K{.}\\K{lt\\_}\\K{s}",
+        "\\K{i16x8}\\K{.}\\K{gt\\_}\\K{u}",
+        "\\K{i16x8}\\K{.}\\K{gt\\_}\\K{s}",
+        "\\K{i16x8}\\K{.}\\K{le\\_}\\K{u}",
+        "\\K{i16x8}\\K{.}\\K{le\\_}\\K{s}",
+        "\\K{i16x8}\\K{.}\\K{ge\\_}\\K{u}",
+        "\\K{i16x8}\\K{.}\\K{ge\\_}\\K{s}",
+        "\\K{i32x4}\\K{.}\\K{eq}",
+        "\\K{i32x4}\\K{.}\\K{ne}",
+        "\\K{i32x4}\\K{.}\\K{lt\\_}\\K{u}",
+        "\\K{i32x4}\\K{.}\\K{lt\\_}\\K{s}",
+        "\\K{i32x4}\\K{.}\\K{gt\\_}\\K{u}",
+        "\\K{i32x4}\\K{.}\\K{gt\\_}\\K{s}",
+        "\\K{i32x4}\\K{.}\\K{le\\_}\\K{u}",
+        "\\K{i32x4}\\K{.}\\K{le\\_}\\K{s}",
+        "\\K{i32x4}\\K{.}\\K{ge\\_}\\K{u}",
+        "\\K{i32x4}\\K{.}\\K{ge\\_}\\K{s}",
+        "\\K{i64x2.}\\K{eq}",
+        "\\K{i64x2.}\\K{ne}",
+        "\\K{i64x2.}\\K{lt\\_s}",
+        "\\K{i64x2.}\\K{gt\\_s}",
+        "\\K{i64x2.}\\K{le\\_s}",
+        "\\K{i64x2.}\\K{ge\\_s}",
+        "\\K{f32x4}\\K{.}\\K{eq}",
+        "\\K{f32x4}\\K{.}\\K{ne}",
+        "\\K{f32x4}\\K{.}\\K{lt}",
+        "\\K{f32x4}\\K{.}\\K{gt}",
+        "\\K{f32x4}\\K{.}\\K{le}",
+        "\\K{f32x4}\\K{.}\\K{ge}",
+        "\\K{f64x2}\\K{.}\\K{eq}",
+        "\\K{f64x2}\\K{.}\\K{ne}",
+        "\\K{f64x2}\\K{.}\\K{lt}",
+        "\\K{f64x2}\\K{.}\\K{gt}",
+        "\\K{f64x2}\\K{.}\\K{le}",
+        "\\K{f64x2}\\K{.}\\K{ge}"
+    ],
+    ":math:`\\shape\\K{.}\\ALLTRUE`": [
+        "\\K{i8x16}\\K{.}\\K{all\\_true}",
+        "\\K{i16x8}\\K{.}\\K{all\\_true}",
+        "\\K{i32x4}\\K{.}\\K{all\\_true}",
+        "\\K{i64x2}\\K{.}\\K{all\\_true}"
+    ],
+    ":math:`\\V128\\K{.}\\vvbinop`": [
+        "\\K{v128.}\\K{and}",
+        "\\K{v128.}\\K{andnot}",
+        "\\K{v128.}\\K{or}",
+        "\\K{v128.}\\K{xor}"
+    ],
+    ":math:`\\V128\\K{.}\\ANYTRUE`": [
+        "\\K{v128.}\\K{any\\_true}"
+    ],
+    ":math:`\\K{i8x16.}\\SWIZZLE`": [
+        "\\K{i8x16.}\\SWIZZLE"
+    ],
+    ":math:`\\shape\\K{.}\\vbinop`": [
+        "\\K{i16x8.}\\Q15MULRSAT\\K{\\_s}",
+        "\\K{i8x16}\\K{.}\\K{add}",
+        "\\K{i8x16}\\K{.}\\K{sub}",
+        "\\K{i16x8}\\K{.}\\K{add}",
+        "\\K{i16x8}\\K{.}\\K{sub}",
+        "\\K{i32x4}\\K{.}\\K{add}",
+        "\\K{i32x4}\\K{.}\\K{sub}",
+        "\\K{i64x2}\\K{.}\\K{add}",
+        "\\K{i64x2}\\K{.}\\K{sub}",
+        "\\K{i8x16.}\\K{min\\_}\\K{u}",
+        "\\K{i8x16.}\\K{min\\_}\\K{s}",
+        "\\K{i8x16.}\\K{max\\_}\\K{u}",
+        "\\K{i8x16.}\\K{max\\_}\\K{s}",
+        "\\K{i16x8.}\\K{min\\_}\\K{u}",
+        "\\K{i16x8.}\\K{min\\_}\\K{s}",
+        "\\K{i16x8.}\\K{max\\_}\\K{u}",
+        "\\K{i16x8.}\\K{max\\_}\\K{s}",
+        "\\K{i32x4.}\\K{min\\_}\\K{u}",
+        "\\K{i32x4.}\\K{min\\_}\\K{s}",
+        "\\K{i32x4.}\\K{max\\_}\\K{u}",
+        "\\K{i32x4.}\\K{max\\_}\\K{s}",
+        "\\K{i8x16.}\\K{add\\_sat\\_}\\K{u}",
+        "\\K{i8x16.}\\K{add\\_sat\\_}\\K{s}",
+        "\\K{i8x16.}\\K{sub\\_sat\\_}\\K{u}",
+        "\\K{i8x16.}\\K{sub\\_sat\\_}\\K{s}",
+        "\\K{i16x8.}\\K{add\\_sat\\_}\\K{u}",
+        "\\K{i16x8.}\\K{add\\_sat\\_}\\K{s}",
+        "\\K{i16x8.}\\K{sub\\_sat\\_}\\K{u}",
+        "\\K{i16x8.}\\K{sub\\_sat\\_}\\K{s}",
+        "\\K{i16x8.}\\K{mul}",
+        "\\K{i32x4.}\\K{mul}",
+        "\\K{i64x2.}\\K{mul}",
+        "\\K{i8x16.}\\AVGR\\K{\\_u}",
+        "\\K{i16x8.}\\AVGR\\K{\\_u}",
+        "\\K{f32x4}\\K{.}\\K{add}",
+        "\\K{f32x4}\\K{.}\\K{sub}",
+        "\\K{f32x4}\\K{.}\\K{mul}",
+        "\\K{f32x4}\\K{.}\\K{div}",
+        "\\K{f32x4}\\K{.}\\K{min}",
+        "\\K{f32x4}\\K{.}\\K{max}",
+        "\\K{f32x4}\\K{.}\\K{pmin}",
+        "\\K{f32x4}\\K{.}\\K{pmax}",
+        "\\K{f64x2}\\K{.}\\K{add}",
+        "\\K{f64x2}\\K{.}\\K{sub}",
+        "\\K{f64x2}\\K{.}\\K{mul}",
+        "\\K{f64x2}\\K{.}\\K{div}",
+        "\\K{f64x2}\\K{.}\\K{min}",
+        "\\K{f64x2}\\K{.}\\K{max}",
+        "\\K{f64x2}\\K{.}\\K{pmin}",
+        "\\K{f64x2}\\K{.}\\K{pmax}"
+    ],
+    ":math:`\\V128\\K{.}\\vvunop`": [
+        "\\K{v128.}\\K{not}"
+    ],
+    ":math:`\\shape\\K{.}\\SPLAT`": [
+        "\\K{i8x16}\\K{.}\\SPLAT",
+        "\\K{i16x8}\\K{.}\\SPLAT",
+        "\\K{i32x4}\\K{.}\\SPLAT",
+        "\\K{i64x2}\\K{.}\\SPLAT",
+        "\\K{f32x4}\\K{.}\\SPLAT",
+        "\\K{f64x2}\\K{.}\\SPLAT"
+    ],
+    ":math:`\\shape\\K{.}\\vunop`": [
+        "\\K{i8x16}\\K{.}\\K{abs}",
+        "\\K{i8x16}\\K{.}\\K{neg}",
+        "\\K{i16x8}\\K{.}\\K{abs}",
+        "\\K{i16x8}\\K{.}\\K{neg}",
+        "\\K{i32x4}\\K{.}\\K{abs}",
+        "\\K{i32x4}\\K{.}\\K{neg}",
+        "\\K{i64x2}\\K{.}\\K{abs}",
+        "\\K{i64x2}\\K{.}\\K{neg}",
+        "\\K{i8x16.}\\VPOPCNT",
+        "\\K{f32x4}\\K{.}\\K{abs}",
+        "\\K{f32x4}\\K{.}\\K{neg}",
+        "\\K{f32x4}\\K{.}\\K{sqrt}",
+        "\\K{f32x4}\\K{.}\\K{ceil}",
+        "\\K{f32x4}\\K{.}\\K{floor}",
+        "\\K{f32x4}\\K{.}\\K{trunc}",
+        "\\K{f32x4}\\K{.}\\K{nearest}",
+        "\\K{f64x2}\\K{.}\\K{abs}",
+        "\\K{f64x2}\\K{.}\\K{neg}",
+        "\\K{f64x2}\\K{.}\\K{sqrt}",
+        "\\K{f64x2}\\K{.}\\K{ceil}",
+        "\\K{f64x2}\\K{.}\\K{floor}",
+        "\\K{f64x2}\\K{.}\\K{trunc}",
+        "\\K{f64x2}\\K{.}\\K{nearest}"
+    ],
+    ":math:`\\SELECT~(t^\\ast)^?`": [
+        "\\SELECT~(\\valtype^\\ast)^?"
+    ],
+    ":math:`\\DROP`": [
+        "\\DROP"
+    ],
+    ":math:`\\GLOBALGET~x`": [
+        "\\GLOBALGET~\\globalidx"
+    ],
+    ":math:`\\GLOBALSET~x`": [
+        "\\GLOBALSET~\\globalidx"
+    ],
+    ":math:`\\LOCALGET~x`": [
+        "\\LOCALGET~\\localidx"
+    ],
+    ":math:`\\LOCALSET~x`": [
+        "\\LOCALSET~\\localidx"
+    ],
+    ":math:`\\LOCALTEE~x`": [
+        "\\LOCALTEE~\\localidx"
+    ],
+    ":math:`\\TABLECOPY~x~y`": [
+        "\\TABLECOPY~\\tableidx~\\tableidx"
+    ],
+    ":math:`\\TABLEINIT~x~y`": [
+        "\\TABLEINIT~\\tableidx~\\elemidx"
+    ],
+    ":math:`\\TABLESIZE~x`": [
+        "\\TABLESIZE~\\tableidx"
+    ],
+    ":math:`\\TABLEGROW~x`": [
+        "\\TABLEGROW~\\tableidx"
+    ],
+    ":math:`\\TABLEFILL~x`": [
+        "\\TABLEFILL~\\tableidx"
+    ],
+    ":math:`\\TABLEGET~x`": [
+        "\\TABLEGET~\\tableidx"
+    ],
+    ":math:`\\TABLESET~x`": [
+        "\\TABLESET~\\tableidx"
+    ],
+    ":math:`\\ELEMDROP~x`": [
+        "\\ELEMDROP~\\elemidx"
+    ],
+    ":math:`t\\K{.}\\LOAD~\\memarg` and :math:`t\\K{.}\\LOAD{N}\\K{\\_}\\sx~\\memarg`": [
+        "\\K{i}\\K{32}\\K{.}\\LOAD~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{64}\\K{.}\\LOAD~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{f}\\K{32}\\K{.}\\LOAD~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{f}\\K{64}\\K{.}\\LOAD~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{32}\\K{.}\\LOAD\\K{8\\_}\\K{u}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{32}\\K{.}\\LOAD\\K{8\\_}\\K{s}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{64}\\K{.}\\LOAD\\K{8\\_}\\K{u}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{64}\\K{.}\\LOAD\\K{8\\_}\\K{s}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{32}\\K{.}\\LOAD\\K{16\\_}\\K{u}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{32}\\K{.}\\LOAD\\K{16\\_}\\K{s}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{64}\\K{.}\\LOAD\\K{16\\_}\\K{u}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{64}\\K{.}\\LOAD\\K{16\\_}\\K{s}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i64.}\\LOAD\\K{32\\_}\\K{u}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i64.}\\LOAD\\K{32\\_}\\K{s}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}"
+    ],
+    ":math:`t\\K{.}\\STORE~\\memarg` and :math:`t\\K{.}\\STORE{N}~\\memarg`": [
+        "\\K{i}\\K{32}\\K{.}\\STORE~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{64}\\K{.}\\STORE~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{f}\\K{32}\\K{.}\\STORE~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{f}\\K{64}\\K{.}\\STORE~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\STORE~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{32}\\K{.}\\STORE\\K{8}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{64}\\K{.}\\STORE\\K{8}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{32}\\K{.}\\STORE\\K{16}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i}\\K{64}\\K{.}\\STORE\\K{16}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{i64.}\\STORE\\K{32}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}"
+    ],
+    ":math:`\\V128\\K{.}\\STORE{N}\\K{\\_lane}~\\memarg~x`": [
+        "\\K{v128.}\\STORE8\\K{\\_lane}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}~\\u8",
+        "\\K{v128.}\\STORE16\\K{\\_lane}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}~\\u8",
+        "\\K{v128.}\\STORE32\\K{\\_lane}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}~\\u8",
+        "\\K{v128.}\\STORE64\\K{\\_lane}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}~\\u8"
+    ],
+    ":math:`\\V128\\K{.}\\LOAD{N}\\K{\\_lane}~\\memarg~x`": [
+        "\\K{v128.}\\LOAD8\\K{\\_lane}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}~\\u8",
+        "\\K{v128.}\\LOAD16\\K{\\_lane}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}~\\u8",
+        "\\K{v128.}\\LOAD32\\K{\\_lane}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}~\\u8",
+        "\\K{v128.}\\LOAD64\\K{\\_lane}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}~\\u8"
+    ],
+    ":math:`\\V128\\K{.}\\LOAD{M}\\K{x}N\\_\\sx~\\memarg`": [
+        "\\K{v128.}\\LOAD\\K{8x8\\_}\\K{u}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD\\K{8x8\\_}\\K{s}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD\\K{16x4\\_}\\K{u}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD\\K{16x4\\_}\\K{s}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD\\K{32x2\\_}\\K{u}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD\\K{32x2\\_}\\K{s}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}"
+    ],
+    ":math:`\\V128\\K{.}\\LOAD{N}\\K{\\_splat}~\\memarg`": [
+        "\\K{v128.}\\LOAD8\\K{\\_splat}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD16\\K{\\_splat}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD32\\K{\\_splat}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD64\\K{\\_splat}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}"
+    ],
+    ":math:`\\V128\\K{.}\\LOAD{N}\\K{\\_zero}~\\memarg`": [
+        "\\K{v128.}\\LOAD\\K{32\\_zero}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}",
+        "\\K{v128.}\\LOAD\\K{64\\_zero}~\\{ \\OFFSET~\\u32, \\ALIGN~\\u32 \\}"
+    ],
+    ":math:`\\MEMORYINIT~x`": [
+        "\\MEMORYINIT~\\dataidx"
+    ],
+    ":math:`\\MEMORYSIZE`": [
+        "\\MEMORYSIZE"
+    ],
+    ":math:`\\MEMORYGROW`": [
+        "\\MEMORYGROW"
+    ],
+    ":math:`\\MEMORYFILL`": [
+        "\\MEMORYFILL"
+    ],
+    ":math:`\\MEMORYCOPY`": [
+        "\\MEMORYCOPY"
+    ],
+    ":math:`\\DATADROP~x`": [
+        "\\DATADROP~\\dataidx"
+    ],
+    ":math:`\\IF~\\blocktype~\\instr_1^\\ast~\\ELSE~\\instr_2^\\ast~\\END`": [
+        "\\IF~\\typeidx~\\instr^\\ast~\\ELSE~\\instr^\\ast~\\END",
+        "\\IF~\\valtype^?~\\instr^\\ast~\\ELSE~\\instr^\\ast~\\END"
+    ],
+    ":math:`\\BLOCK~\\blocktype~\\instr^\\ast~\\END`": [
+        "\\BLOCK~\\typeidx~\\instr^\\ast~\\END",
+        "\\BLOCK~\\valtype^?~\\instr^\\ast~\\END"
+    ],
+    ":math:`\\LOOP~\\blocktype~\\instr^\\ast~\\END`": [
+        "\\LOOP~\\typeidx~\\instr^\\ast~\\END",
+        "\\LOOP~\\valtype^?~\\instr^\\ast~\\END"
+    ],
+    ":math:`\\BRTABLE~l^\\ast~l_N`": [
+        "\\BRTABLE~\\vec(\\labelidx)~\\labelidx"
+    ],
+    ":math:`\\CALLINDIRECT~x~y`": [
+        "\\CALLINDIRECT~\\tableidx~\\typeidx"
+    ],
+    ":math:`\\UNREACHABLE`": [
+        "\\UNREACHABLE"
+    ],
+    ":math:`\\BRIF~l`": [
+        "\\BRIF~\\labelidx"
+    ],
+    ":math:`\\RETURN`": [
+        "\\RETURN"
+    ],
+    ":math:`\\CALL~x`": [
+        "\\CALL~\\funcidx"
+    ],
+    ":math:`\\BR~l`": [
+        "\\BR~\\labelidx"
+    ],
+    ":math:`\\NOP`": [
+        "\\NOP"
+    ]
+}

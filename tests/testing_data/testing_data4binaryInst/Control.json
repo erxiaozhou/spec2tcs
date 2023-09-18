@@ -1,0 +1,30 @@
+[
+    [
+        "\\hex{00} ",
+        "\\UNREACHABLE"
+    ],
+    [
+        "\\hex{02}~~\\X{bt}{:}\\Bblocktype~~(\\X{in}{:}\\Binstr)^\\ast~~\\hex{0B}\n       ",
+        "\\BLOCK~\\X{bt}~\\X{in}^\\ast~\\END"
+    ],
+    [
+        "\\hex{04}~~\\X{bt}{:}\\Bblocktype~~(\\X{in}{:}\\Binstr)^\\ast~~\\hex{0B}\n       ",
+        "\\IF~\\X{bt}~\\X{in}^\\ast~\\ELSE~\\epsilon~\\END"
+    ],
+    [
+        "\\hex{04}~~\\X{bt}{:}\\Bblocktype~~(\\X{in}_1{:}\\Binstr)^\\ast~~\n       \\hex{05}~~(\\X{in}_2{:}\\Binstr)^\\ast~~\\hex{0B}\n       ",
+        "\\IF~\\X{bt}~\\X{in}_1^\\ast~\\ELSE~\\X{in}_2^\\ast~\\END"
+    ],
+    [
+        "\\hex{0C}~~l{:}\\Blabelidx ",
+        "\\BR~l"
+    ],
+    [
+        "\\hex{0E}~~l^\\ast{:}\\Bvec(\\Blabelidx)~~l_N{:}\\Blabelidx\n       ",
+        "\\BRTABLE~l^\\ast~l_N"
+    ],
+    [
+        "\\hex{11}~~y{:}\\Btypeidx~~x{:}\\Btableidx ",
+        "\\CALLINDIRECT~x~y"
+    ]
+]

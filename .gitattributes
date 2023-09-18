@@ -1,0 +1,5 @@
+.gitattributes merge=ours
+.gitignore merge=ours
+tmp_*.py merge=ours
+about_operation_lines merge=ours
+save_something merge=ours
