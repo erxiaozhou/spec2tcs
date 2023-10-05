@@ -45,7 +45,7 @@ _ps = {
     # execute
     'execute_1_p': linePattern('execute', r':ref:`Execute <exec-br>` the instruction (.*?)\.?$'),
     'execute_2_p': linePattern('execute', r':ref:`Execute <exec-local.set>` the instruction (.*?)\.?$'),
-    'execute_3_p': linePattern('execute', r'Execute the instruction (.*?)\.?$'),
+    'execute_3_p': linePattern('execute', r'Execute the .*instruction (.*?)\.?$'),
     # do nothing
     'do_nothing_p': linePattern('do_nothing', r'Do nothing'),
     # else

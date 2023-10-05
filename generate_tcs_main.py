@@ -4,7 +4,6 @@ from combinedInst_util import combinedInst
 from combinedInst_util import combinedInsts
 from file_util import check_dir, read_json, rm_dir
 from se_inst_generate_tcs_util import generate_tcs_from_result_pairs
-import os
 from generation_process_util import generationResult, generationConfig
 from se_inst_env_util import get_env
 from se_inst_env_util import Environment
